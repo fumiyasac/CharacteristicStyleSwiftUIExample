@@ -7,15 +7,12 @@ let package = Package(
     name: "CharacteristicStyleSwiftUIExample",
     platforms: [.iOS(.v17)],
     products: [
-        .library(
-            name: "AppFeature",
-            targets: ["AppFeature"]),
+        .library(name: "AppFeature", targets: ["AppFeature"]),
+        .library(name: "Infrastructure", targets: ["Infrastructure"]),
     ],
     targets: [
-        .target(
-            name: "AppFeature",
-            path: "Sources/"
-        ),
+        .target(name: "AppFeature"),
+        .target(name: "Infrastructure"),
 // このModule内でUnitTestが必要ならば下記をコメントインしてUnitTestを記載する
 //        .testTarget(
 //            name: "CharacteristicStyleSwiftUIExampleTests",
