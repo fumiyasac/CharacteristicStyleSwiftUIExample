@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8902AEC0100006C617C /* Infrastructure */; };
+		DE48C8932AEFFC50006C617C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE48C8922AEFFC50006C617C /* AppDelegate.swift */; };
 		DE78BCF62AE61C690089AFD2 /* CharacteristicStyleSwiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78BCF52AE61C690089AFD2 /* CharacteristicStyleSwiftUIExampleApp.swift */; };
 		DE78BCFA2AE61C6A0089AFD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78BCF92AE61C6A0089AFD2 /* Assets.xcassets */; };
 		DE78BCFD2AE61C6A0089AFD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78BCFC2AE61C6A0089AFD2 /* Preview Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE48C8922AEFFC50006C617C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE78BCF22AE61C690089AFD2 /* CharacteristicStyleSwiftUIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharacteristicStyleSwiftUIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE78BCF52AE61C690089AFD2 /* CharacteristicStyleSwiftUIExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicStyleSwiftUIExampleApp.swift; sourceTree = "<group>"; };
 		DE78BCF92AE61C6A0089AFD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				DE78BCF52AE61C690089AFD2 /* CharacteristicStyleSwiftUIExampleApp.swift */,
 				DE78BCF92AE61C6A0089AFD2 /* Assets.xcassets */,
 				DE78BCFB2AE61C6A0089AFD2 /* Preview Content */,
+				DE48C8922AEFFC50006C617C /* AppDelegate.swift */,
 			);
 			path = CharacteristicStyleSwiftUIExample;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE48C8932AEFFC50006C617C /* AppDelegate.swift in Sources */,
 				DE78BCF62AE61C690089AFD2 /* CharacteristicStyleSwiftUIExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
