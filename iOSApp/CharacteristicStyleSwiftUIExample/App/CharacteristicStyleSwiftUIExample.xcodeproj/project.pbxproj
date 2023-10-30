@@ -59,9 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				DE78BCF52AE61C690089AFD2 /* CharacteristicStyleSwiftUIExampleApp.swift */,
+				DE48C8922AEFFC50006C617C /* AppDelegate.swift */,
 				DE78BCF92AE61C6A0089AFD2 /* Assets.xcassets */,
 				DE78BCFB2AE61C6A0089AFD2 /* Preview Content */,
-				DE48C8922AEFFC50006C617C /* AppDelegate.swift */,
 			);
 			path = CharacteristicStyleSwiftUIExample;
 			sourceTree = "<group>";
