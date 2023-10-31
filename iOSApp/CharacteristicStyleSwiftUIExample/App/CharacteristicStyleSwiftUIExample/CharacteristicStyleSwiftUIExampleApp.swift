@@ -10,6 +10,13 @@ import AppFeature
 
 @main
 struct CharacteristicStyleSwiftUIExampleApp: App {
+
+    // MARK: - AppDelegate
+
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+    // MARK: - Body
+
     var body: some Scene {
         WindowGroup {
             ContentView()

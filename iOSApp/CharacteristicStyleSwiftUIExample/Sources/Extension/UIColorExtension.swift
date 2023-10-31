@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 // 16進数のカラーコードをiOSの設定に変換するメソッド
 // 参考：【Swift】Tips: あると便利だったextension達(UIColor編)

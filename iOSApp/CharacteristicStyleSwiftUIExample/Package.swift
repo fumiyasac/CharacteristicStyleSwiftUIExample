@@ -8,10 +8,12 @@ let package = Package(
     platforms: [.iOS(.v17)],
     products: [
         .library(name: "AppFeature", targets: ["AppFeature"]),
+        .library(name: "Extension", targets: ["Extension"]),
         .library(name: "Infrastructure", targets: ["Infrastructure"]),
     ],
     targets: [
         .target(name: "AppFeature"),
+        .target(name: "Extension"),
         .target(name: "Infrastructure"),
 // このModule内でUnitTestが必要ならば下記をコメントインしてUnitTestを記載する
 //        .testTarget(
