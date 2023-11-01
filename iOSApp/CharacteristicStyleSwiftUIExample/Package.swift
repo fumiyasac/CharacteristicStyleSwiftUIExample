@@ -11,10 +11,18 @@ let package = Package(
         .library(name: "Extension", targets: ["Extension"]),
         .library(name: "Infrastructure", targets: ["Infrastructure"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/kishikawakatsumi/KeychainAccess", from: "4.2.2")
+    ],
     targets: [
         .target(name: "AppFeature"),
         .target(name: "Extension"),
-        .target(name: "Infrastructure"),
+        .target(
+            name: "Infrastructure",
+            dependencies: [
+                .product(name: "KeychainAccess", package: "KeychainAccess")
+            ]
+        ),
 // このModule内でUnitTestが必要ならば下記をコメントインしてUnitTestを記載する
 //        .testTarget(
 //            name: "CharacteristicStyleSwiftUIExampleTests",
