@@ -30,7 +30,7 @@ final class KeychainAccessManager: KeychainAccessProtocol {
     // MARK: - Function
 
     // API管理クラスで利用するJWT文字列を取得する
-    public func getAuthenticationHeader() -> String {
+    func getAuthenticationHeader() -> String {
         if existsJsonAccessToken() {
             return jwtTokenPrefix + keychain[string: keyName]!
         } else {
@@ -39,17 +39,17 @@ final class KeychainAccessManager: KeychainAccessProtocol {
     }
 
     // API管理クラスで利用するJWT文字列をキーチェーンへ保存する
-    public func saveJsonAccessToken(_ token: String) {
+    func saveJsonAccessToken(_ token: String) {
         keychain[string: keyName] = token
     }
 
     // API管理クラスで利用するJWT文字列をキーチェーンから削除する
-    public func deleteJsonAccessToken() {
+    func deleteJsonAccessToken() {
         keychain[string: keyName] = nil
     }
 
     // JWT文字列がキーチェーンに存在するかを判定する
-    public func existsJsonAccessToken() -> Bool {
+    func existsJsonAccessToken() -> Bool {
         return (keychain[string: keyName] != nil)
     }
 }
