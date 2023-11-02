@@ -8,14 +8,22 @@ let package = Package(
     platforms: [.iOS(.v17)],
     products: [
         .library(name: "AppFeature", targets: ["AppFeature"]),
+        .library(name: "Components", targets: ["Components"]),
         .library(name: "Extension", targets: ["Extension"]),
         .library(name: "Infrastructure", targets: ["Infrastructure"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/kishikawakatsumi/KeychainAccess", from: "4.2.2")
+        .package(url: "https://github.com/kishikawakatsumi/KeychainAccess", from: "4.2.2"),
+        .package(url: "https://github.com/evgenyneu/Cosmos", branch: "master")
     ],
     targets: [
         .target(name: "AppFeature"),
+        .target(
+            name: "Components",
+            dependencies: [
+                .product(name: "Cosmos", package: "Cosmos")
+            ]
+        ),
         .target(name: "Extension"),
         .target(
             name: "Infrastructure",
