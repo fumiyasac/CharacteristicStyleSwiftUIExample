@@ -14,7 +14,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/kishikawakatsumi/KeychainAccess", from: "4.2.2"),
-        .package(url: "https://github.com/evgenyneu/Cosmos", branch: "master")
+        .package(url: "https://github.com/evgenyneu/Cosmos", branch: "master"),
+        .package(url: "https://github.com/kean/Nuke", from: "12.1.6"),
     ],
     targets: [
         .target(name: "AppFeature"),
