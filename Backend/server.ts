@@ -1,4 +1,3 @@
-/*
 // Mock用のJSONレスポンスサーバーの初期化設定
 import jsonServer from 'json-server';
 const server = jsonServer.create();
@@ -22,4 +21,3 @@ server.use(middlewares);
 server.listen(3000, () => {
     console.log('CharacteristicStyleSwiftUIExample Mock Server is running...');
 });
-*/
