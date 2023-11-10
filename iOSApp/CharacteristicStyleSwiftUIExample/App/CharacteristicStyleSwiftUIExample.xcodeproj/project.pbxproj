@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE10175D2AFE7BA7007C33FD /* Screen in Frameworks */ = {isa = PBXBuildFile; productRef = DE10175C2AFE7BA7007C33FD /* Screen */; };
 		DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8902AEC0100006C617C /* Infrastructure */; };
 		DE48C8932AEFFC50006C617C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE48C8922AEFFC50006C617C /* AppDelegate.swift */; };
 		DE48C8952AF13AE4006C617C /* Extension in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8942AF13AE4006C617C /* Extension */; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE10175D2AFE7BA7007C33FD /* Screen in Frameworks */,
 				DE48C8972AF3EB85006C617C /* Components in Frameworks */,
 				DE78BD062AE623480089AFD2 /* AppFeature in Frameworks */,
 				DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */,
@@ -106,6 +108,7 @@
 				DE48C8902AEC0100006C617C /* Infrastructure */,
 				DE48C8942AF13AE4006C617C /* Extension */,
 				DE48C8962AF3EB85006C617C /* Components */,
+				DE10175C2AFE7BA7007C33FD /* Screen */,
 			);
 			productName = CharacteristicStyleSwiftUIExample;
 			productReference = DE78BCF22AE61C690089AFD2 /* CharacteristicStyleSwiftUIExample.app */;
@@ -368,6 +371,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DE10175C2AFE7BA7007C33FD /* Screen */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Screen;
+		};
 		DE48C8902AEC0100006C617C /* Infrastructure */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Infrastructure;
