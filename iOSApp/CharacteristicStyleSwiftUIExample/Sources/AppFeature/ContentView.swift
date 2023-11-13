@@ -9,8 +9,12 @@ import SwiftUI
 
 public struct ContentView: View {
 
+    // MARK: - Initializer
+
     public init() {}
-    
+
+    // MARK: - Body
+
     public var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -21,6 +25,8 @@ public struct ContentView: View {
         .padding()
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     ContentView()
