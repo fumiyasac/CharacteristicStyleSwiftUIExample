@@ -14,7 +14,6 @@ let package = Package(
         .library(name: "Screen", targets: ["Screen"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/kishikawakatsumi/KeychainAccess", from: "4.2.2"),
         .package(url: "https://github.com/evgenyneu/Cosmos", branch: "master"),
         .package(url: "https://github.com/kean/Nuke", from: "12.1.6"),
         .package(url: "https://github.com/amirdew/CollectionViewPagingLayout", from: "1.1.0"),
@@ -31,12 +30,7 @@ let package = Package(
             ]
         ),
         .target(name: "Extension"),
-        .target(
-            name: "Infrastructure",
-            dependencies: [
-                .product(name: "KeychainAccess", package: "KeychainAccess")
-            ]
-        ),
+        .target(name: "Infrastructure"),
         .target(name: "Screen"),
 // このModule内でUnitTestが必要ならば下記をコメントインしてUnitTestを記載する
 //        .testTarget(
