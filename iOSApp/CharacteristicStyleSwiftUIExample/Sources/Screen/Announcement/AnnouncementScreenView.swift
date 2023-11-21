@@ -1,10 +1,3 @@
-//
-//  AnnouncementScreenView.swift
-//
-//
-//  Created by 酒井文也 on 2023/11/10.
-//
-
 import SwiftUI
 
 public struct AnnouncementScreenView: View {
