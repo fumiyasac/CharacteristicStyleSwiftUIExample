@@ -1,10 +1,5 @@
-//
-//  ContentView.swift
-//  CharacteristicStyleSwiftUIExample
-//
-//  Created by 酒井文也 on 2023/10/23.
-//
-
+import Extension
+import Screen
 import SwiftUI
 
 public struct ContentView: View {
@@ -16,13 +11,32 @@ public struct ContentView: View {
     // MARK: - Body
 
     public var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        // TabView表示要素の配置
+        TabView {
+            AnnouncementScreenView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "newspaper.fill")
+                        Text("お知らせ")
+                    }
+                }
+                .tag(0)
+            GalleryScreenView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "photo.stack.fill")
+                        Text("ギャラリー")
+                    }
+                }.tag(1)
+            MenuScreenView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "carrot.fill")
+                        Text("メニュー")
+                    }
+                }.tag(2)
         }
-        .padding()
+        .accentColor(Color(uiColor: UIColor(code: "#f3b664")))
     }
 }
 

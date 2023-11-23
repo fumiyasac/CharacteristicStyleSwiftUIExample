@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct SwiftUIView: View {
+public struct MenuScreenView: View {
 
     // MARK: - Initializer
 
@@ -9,12 +9,12 @@ public struct SwiftUIView: View {
     // MARK: - Body
     
     public var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("MenuScreen")
     }
 }
 
 // MARK: - Preview
 
 #Preview {
-    SwiftUIView()
+    MenuScreenView()
 }

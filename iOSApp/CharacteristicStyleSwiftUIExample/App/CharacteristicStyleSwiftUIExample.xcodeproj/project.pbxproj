@@ -8,9 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		DE10175D2AFE7BA7007C33FD /* Screen in Frameworks */ = {isa = PBXBuildFile; productRef = DE10175C2AFE7BA7007C33FD /* Screen */; };
+		DE10175F2B0F8D0A007C33FD /* Extension in Frameworks */ = {isa = PBXBuildFile; productRef = DE10175E2B0F8D0A007C33FD /* Extension */; };
+		DE1261AF2B0F91350066066D /* CollectionViewPagingLayout in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261AE2B0F91350066066D /* CollectionViewPagingLayout */; };
+		DE1261B22B0F915F0066066D /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B12B0F915F0066066D /* ConfettiSwiftUI */; };
+		DE1261B52B0F91900066066D /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B42B0F91900066066D /* Cosmos */; };
+		DE1261B82B0F91AE0066066D /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B72B0F91AE0066066D /* Nuke */; };
+		DE1261BA2B0F91AE0066066D /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B92B0F91AE0066066D /* NukeExtensions */; };
+		DE1261BC2B0F91AE0066066D /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261BB2B0F91AE0066066D /* NukeUI */; };
+		DE1261BE2B0F91AE0066066D /* NukeVideo in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261BD2B0F91AE0066066D /* NukeVideo */; };
 		DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8902AEC0100006C617C /* Infrastructure */; };
 		DE48C8932AEFFC50006C617C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE48C8922AEFFC50006C617C /* AppDelegate.swift */; };
-		DE48C8952AF13AE4006C617C /* Extension in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8942AF13AE4006C617C /* Extension */; };
 		DE48C8972AF3EB85006C617C /* Components in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8962AF3EB85006C617C /* Components */; };
 		DE78BCF62AE61C690089AFD2 /* CharacteristicStyleSwiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78BCF52AE61C690089AFD2 /* CharacteristicStyleSwiftUIExampleApp.swift */; };
 		DE78BCFA2AE61C6A0089AFD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78BCF92AE61C6A0089AFD2 /* Assets.xcassets */; };
@@ -32,11 +39,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE1261B82B0F91AE0066066D /* Nuke in Frameworks */,
 				DE10175D2AFE7BA7007C33FD /* Screen in Frameworks */,
 				DE48C8972AF3EB85006C617C /* Components in Frameworks */,
+				DE1261B52B0F91900066066D /* Cosmos in Frameworks */,
 				DE78BD062AE623480089AFD2 /* AppFeature in Frameworks */,
 				DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */,
-				DE48C8952AF13AE4006C617C /* Extension in Frameworks */,
+				DE10175F2B0F8D0A007C33FD /* Extension in Frameworks */,
+				DE1261BE2B0F91AE0066066D /* NukeVideo in Frameworks */,
+				DE1261AF2B0F91350066066D /* CollectionViewPagingLayout in Frameworks */,
+				DE1261BC2B0F91AE0066066D /* NukeUI in Frameworks */,
+				DE1261B22B0F915F0066066D /* ConfettiSwiftUI in Frameworks */,
+				DE1261BA2B0F91AE0066066D /* NukeExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,9 +120,16 @@
 			packageProductDependencies = (
 				DE78BD052AE623480089AFD2 /* AppFeature */,
 				DE48C8902AEC0100006C617C /* Infrastructure */,
-				DE48C8942AF13AE4006C617C /* Extension */,
 				DE48C8962AF3EB85006C617C /* Components */,
 				DE10175C2AFE7BA7007C33FD /* Screen */,
+				DE10175E2B0F8D0A007C33FD /* Extension */,
+				DE1261AE2B0F91350066066D /* CollectionViewPagingLayout */,
+				DE1261B12B0F915F0066066D /* ConfettiSwiftUI */,
+				DE1261B42B0F91900066066D /* Cosmos */,
+				DE1261B72B0F91AE0066066D /* Nuke */,
+				DE1261B92B0F91AE0066066D /* NukeExtensions */,
+				DE1261BB2B0F91AE0066066D /* NukeUI */,
+				DE1261BD2B0F91AE0066066D /* NukeVideo */,
 			);
 			productName = CharacteristicStyleSwiftUIExample;
 			productReference = DE78BCF22AE61C690089AFD2 /* CharacteristicStyleSwiftUIExample.app */;
@@ -138,6 +159,12 @@
 				Base,
 			);
 			mainGroup = DE78BCE92AE61C690089AFD2;
+			packageReferences = (
+				DE1261AD2B0F91350066066D /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */,
+				DE1261B02B0F915F0066066D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+				DE1261B32B0F91900066066D /* XCRemoteSwiftPackageReference "Cosmos" */,
+				DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = DE78BCF32AE61C690089AFD2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -370,18 +397,88 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		DE1261AD2B0F91350066066D /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amirdew/CollectionViewPagingLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		DE1261B02B0F915F0066066D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		DE1261B32B0F91900066066D /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		DE10175C2AFE7BA7007C33FD /* Screen */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Screen;
 		};
+		DE10175E2B0F8D0A007C33FD /* Extension */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Extension;
+		};
+		DE1261AE2B0F91350066066D /* CollectionViewPagingLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE1261AD2B0F91350066066D /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */;
+			productName = CollectionViewPagingLayout;
+		};
+		DE1261B12B0F915F0066066D /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE1261B02B0F915F0066066D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+		DE1261B42B0F91900066066D /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE1261B32B0F91900066066D /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
+		};
+		DE1261B72B0F91AE0066066D /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		DE1261B92B0F91AE0066066D /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeExtensions;
+		};
+		DE1261BB2B0F91AE0066066D /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		DE1261BD2B0F91AE0066066D /* NukeVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeVideo;
+		};
 		DE48C8902AEC0100006C617C /* Infrastructure */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Infrastructure;
-		};
-		DE48C8942AF13AE4006C617C /* Extension */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Extension;
 		};
 		DE48C8962AF3EB85006C617C /* Components */ = {
 			isa = XCSwiftPackageProductDependency;
