@@ -7,6 +7,9 @@ import AppFeature
 // その3: TipKit
 // 👉 基本的にはMVVMの様な形で上手にまとめられる様にしておく
 
+// MEMO:
+// Packageの依存関係をまとめる
+
 @main
 struct CharacteristicStyleSwiftUIExampleApp: App {
 
