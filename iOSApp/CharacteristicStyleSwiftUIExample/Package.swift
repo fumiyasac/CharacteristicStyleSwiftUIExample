@@ -17,7 +17,8 @@ let package = Package(
         .package(url: "https://github.com/evgenyneu/Cosmos", branch: "master"),
         .package(url: "https://github.com/kean/Nuke", from: "12.1.6"),
         .package(url: "https://github.com/amirdew/CollectionViewPagingLayout", from: "1.1.0"),
-        .package(url: "https://github.com/simibac/ConfettiSwiftUI.git", from: "1.1.0")
+        .package(url: "https://github.com/simibac/ConfettiSwiftUI.git", from: "1.1.0"),
+        .package(url: "https://github.com/sunshinejr/SwiftyUserDefaults.git", from: "5.3.0")
     ],
     targets: [
         .target(name: "AppFeature"),
@@ -30,7 +31,12 @@ let package = Package(
             ]
         ),
         .target(name: "Extension"),
-        .target(name: "Infrastructure"),
+        .target(
+            name: "Infrastructure",
+            dependencies: [
+                .product(name: "SwiftyUserDefaults", package: "SwiftyUserDefaults")
+            ]
+        ),
         .target(name: "Screen"),
 // このModule内でUnitTestが必要ならば下記をコメントインしてUnitTestを記載する
 //        .testTarget(

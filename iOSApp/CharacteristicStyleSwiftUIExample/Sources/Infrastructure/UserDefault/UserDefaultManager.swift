@@ -1,26 +1,14 @@
 import Foundation
+import SwiftyUserDefaults
 
-// 参考: PropertyWrapperで管理しながらもMVVMアーキテクチャで利用しやすい形にする
-// https://www.avanderlee.com/swift/property-wrappers/
+// MEMO: ライブラリ「SwiftyUserDefaults」を利用する形
+// 補足: Quick/Nimbleを用いたテストコードで書きやすい点やPropertyWrapperにも標準で対応している
 
-@propertyWrapper
-struct UserDefault<Value> {
-    let key: String
-    let defaultValue: Value
-    var container: UserDefaults = .standard
+extension DefaultsKeys {
 
-    var wrappedValue: Value {
-        get {
-            return container.object(forKey: key) as? Value ?? defaultValue
-        }
-        set {
-            container.set(newValue, forKey: key)
-        }
+    // MARK: - Computed Property
+
+    var onboardingStatus: DefaultsKey<Bool> {
+        .init("onboardingStatus", defaultValue: true)
     }
-}
-
-extension UserDefaults {
-
-    @UserDefault(key: "has_seen_app_introduction", defaultValue: false)
-    static var hasSeenAppIntroduction: Bool
 }

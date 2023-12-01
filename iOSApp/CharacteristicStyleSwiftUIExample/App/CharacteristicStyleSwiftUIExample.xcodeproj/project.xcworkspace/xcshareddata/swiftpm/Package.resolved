@@ -35,6 +35,15 @@
         "revision" : "3f666f120b63ea7de57d42e9a7c9b47f8e7a290b",
         "version" : "12.1.6"
       }
+    },
+    {
+      "identity" : "swiftyuserdefaults",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sunshinejr/SwiftyUserDefaults.git",
+      "state" : {
+        "revision" : "f66bcd04088582c8fbb5cb8554d577e303bae396",
+        "version" : "5.3.0"
+      }
     }
   ],
   "version" : 2
