@@ -1,5 +1,7 @@
 import Foundation
 
+// MARK: - Enum
+
 // MEMO: APIリクエストに関するEnum定義
 enum HTTPMethod {
     case GET

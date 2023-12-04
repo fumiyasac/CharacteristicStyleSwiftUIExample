@@ -11,7 +11,7 @@ final class AnnouncementDataObject {
     private(set) var category: String
     private(set) var summary: String
     private(set) var thumbnailUrl: String
-    private(set) var timestamp: Date
+    private(set) var publishedAt: String
 
     // MARK: - Initializer
 
@@ -21,13 +21,13 @@ final class AnnouncementDataObject {
         category: String,
         summary: String,
         thumbnailUrl: String,
-        timestamp: Date = Date()
+        publishedAt: String,
     ) {
         self.id = id
         self.title = title
         self.category = category
         self.summary = summary
         self.thumbnailUrl = thumbnailUrl
-        self.timestamp = timestamp
+        self.publishedAt = publishedAt
     }
 }
