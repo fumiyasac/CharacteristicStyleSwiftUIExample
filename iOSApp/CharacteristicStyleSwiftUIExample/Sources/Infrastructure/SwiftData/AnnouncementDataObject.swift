@@ -21,7 +21,7 @@ final class AnnouncementDataObject {
         category: String,
         summary: String,
         thumbnailUrl: String,
-        publishedAt: String,
+        publishedAt: String
     ) {
         self.id = id
         self.title = title

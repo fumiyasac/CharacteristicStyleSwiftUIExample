@@ -1,6 +1,6 @@
 import Foundation
 
-struct GalleryEntity {
+public struct GalleryEntity {
 
     // MARK: - Property
 
@@ -22,7 +22,7 @@ struct GalleryEntity {
 
     // MARK: - Initializer
 
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
 
         // JSONの配列内の要素を取得する
         let container = try decoder.container(keyedBy: Keys.self)

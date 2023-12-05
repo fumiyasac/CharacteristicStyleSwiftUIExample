@@ -1,6 +1,6 @@
 import Foundation
 
-struct AnnouncementEntity {
+public struct AnnouncementEntity {
 
     // MARK: - Property
 
@@ -24,7 +24,7 @@ struct AnnouncementEntity {
 
     // MARK: - Initializer
 
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
 
         // JSONの配列内の要素を取得する
         let container = try decoder.container(keyedBy: Keys.self)
