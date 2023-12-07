@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DE10175D2AFE7BA7007C33FD /* Screen in Frameworks */ = {isa = PBXBuildFile; productRef = DE10175C2AFE7BA7007C33FD /* Screen */; };
 		DE10175F2B0F8D0A007C33FD /* Extension in Frameworks */ = {isa = PBXBuildFile; productRef = DE10175E2B0F8D0A007C33FD /* Extension */; };
-		DE1261AF2B0F91350066066D /* CollectionViewPagingLayout in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261AE2B0F91350066066D /* CollectionViewPagingLayout */; };
 		DE1261B22B0F915F0066066D /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B12B0F915F0066066D /* ConfettiSwiftUI */; };
 		DE1261B52B0F91900066066D /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B42B0F91900066066D /* Cosmos */; };
 		DE1261B82B0F91AE0066066D /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B72B0F91AE0066066D /* Nuke */; };
@@ -49,7 +48,6 @@
 				DE10175F2B0F8D0A007C33FD /* Extension in Frameworks */,
 				DE1261BE2B0F91AE0066066D /* NukeVideo in Frameworks */,
 				DE631A122B1A201C00D4B18E /* SwiftyUserDefaults in Frameworks */,
-				DE1261AF2B0F91350066066D /* CollectionViewPagingLayout in Frameworks */,
 				DE1261BC2B0F91AE0066066D /* NukeUI in Frameworks */,
 				DE1261B22B0F915F0066066D /* ConfettiSwiftUI in Frameworks */,
 				DE1261BA2B0F91AE0066066D /* NukeExtensions in Frameworks */,
@@ -125,7 +123,6 @@
 				DE48C8962AF3EB85006C617C /* Components */,
 				DE10175C2AFE7BA7007C33FD /* Screen */,
 				DE10175E2B0F8D0A007C33FD /* Extension */,
-				DE1261AE2B0F91350066066D /* CollectionViewPagingLayout */,
 				DE1261B12B0F915F0066066D /* ConfettiSwiftUI */,
 				DE1261B42B0F91900066066D /* Cosmos */,
 				DE1261B72B0F91AE0066066D /* Nuke */,
@@ -163,7 +160,6 @@
 			);
 			mainGroup = DE78BCE92AE61C690089AFD2;
 			packageReferences = (
-				DE1261AD2B0F91350066066D /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */,
 				DE1261B02B0F915F0066066D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
 				DE1261B32B0F91900066066D /* XCRemoteSwiftPackageReference "Cosmos" */,
 				DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */,
@@ -402,14 +398,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DE1261AD2B0F91350066066D /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/amirdew/CollectionViewPagingLayout.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
-			};
-		};
 		DE1261B02B0F915F0066066D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
@@ -452,11 +440,6 @@
 		DE10175E2B0F8D0A007C33FD /* Extension */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Extension;
-		};
-		DE1261AE2B0F91350066066D /* CollectionViewPagingLayout */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE1261AD2B0F91350066066D /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */;
-			productName = CollectionViewPagingLayout;
 		};
 		DE1261B12B0F915F0066066D /* ConfettiSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
