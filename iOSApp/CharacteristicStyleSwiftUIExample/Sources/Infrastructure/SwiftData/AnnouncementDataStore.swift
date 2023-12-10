@@ -1,10 +1,10 @@
 import Foundation
 import SwiftData
 
-// 実装参考:
-// SwiftDataをMVVM（SVVS）のArchitecture内で利用する際の参考
+// 実装参考: SwiftDataをMVVM（SVVS）のArchitecture内で利用する際の参考
 // https://dev.to/jameson/swiftui-with-swiftdata-through-repository-36d1
-// SVVS参考
+// 余談: SVVS(Store-View-ViewStore)構成参考リポジトリ:
+// https://dev.classmethod.jp/articles/iosdc-japan-2023-report-22/
 // https://github.com/chatwork/svvs-sample
 
 final class AnnouncementDataStore {
