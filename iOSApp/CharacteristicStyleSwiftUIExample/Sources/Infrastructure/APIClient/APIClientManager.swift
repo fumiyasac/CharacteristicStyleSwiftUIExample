@@ -105,6 +105,8 @@ final class ApiClientManager {
             throw APIError.error(message: "Forbidden (\(urlString)).")
         case 404:
             throw APIError.error(message: "Not Found (\(urlString)).")
+        case 500:
+            throw APIError.error(message: "Internal Server Error (\(urlString)).")
         default:
             throw APIError.error(message: "Unknown (\(urlString)).")
         }
