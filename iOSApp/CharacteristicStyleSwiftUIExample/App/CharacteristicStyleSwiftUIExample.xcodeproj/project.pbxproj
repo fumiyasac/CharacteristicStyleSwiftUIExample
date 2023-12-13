@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DE10175D2AFE7BA7007C33FD /* Screen in Frameworks */ = {isa = PBXBuildFile; productRef = DE10175C2AFE7BA7007C33FD /* Screen */; };
 		DE10175F2B0F8D0A007C33FD /* Extension in Frameworks */ = {isa = PBXBuildFile; productRef = DE10175E2B0F8D0A007C33FD /* Extension */; };
-		DE1261B22B0F915F0066066D /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B12B0F915F0066066D /* ConfettiSwiftUI */; };
 		DE1261B52B0F91900066066D /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B42B0F91900066066D /* Cosmos */; };
 		DE1261B82B0F91AE0066066D /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B72B0F91AE0066066D /* Nuke */; };
 		DE1261BA2B0F91AE0066066D /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B92B0F91AE0066066D /* NukeExtensions */; };
@@ -18,7 +17,7 @@
 		DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8902AEC0100006C617C /* Infrastructure */; };
 		DE48C8932AEFFC50006C617C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE48C8922AEFFC50006C617C /* AppDelegate.swift */; };
 		DE48C8972AF3EB85006C617C /* Components in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8962AF3EB85006C617C /* Components */; };
-		DE631A122B1A201C00D4B18E /* SwiftyUserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = DE631A112B1A201C00D4B18E /* SwiftyUserDefaults */; };
+		DE631A152B2A218000D4B18E /* SwiftyUserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = DE631A142B2A218000D4B18E /* SwiftyUserDefaults */; };
 		DE78BCF62AE61C690089AFD2 /* CharacteristicStyleSwiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78BCF52AE61C690089AFD2 /* CharacteristicStyleSwiftUIExampleApp.swift */; };
 		DE78BCFA2AE61C6A0089AFD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78BCF92AE61C6A0089AFD2 /* Assets.xcassets */; };
 		DE78BCFD2AE61C6A0089AFD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78BCFC2AE61C6A0089AFD2 /* Preview Assets.xcassets */; };
@@ -39,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE631A152B2A218000D4B18E /* SwiftyUserDefaults in Frameworks */,
 				DE1261B82B0F91AE0066066D /* Nuke in Frameworks */,
 				DE10175D2AFE7BA7007C33FD /* Screen in Frameworks */,
 				DE48C8972AF3EB85006C617C /* Components in Frameworks */,
@@ -47,9 +47,7 @@
 				DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */,
 				DE10175F2B0F8D0A007C33FD /* Extension in Frameworks */,
 				DE1261BE2B0F91AE0066066D /* NukeVideo in Frameworks */,
-				DE631A122B1A201C00D4B18E /* SwiftyUserDefaults in Frameworks */,
 				DE1261BC2B0F91AE0066066D /* NukeUI in Frameworks */,
-				DE1261B22B0F915F0066066D /* ConfettiSwiftUI in Frameworks */,
 				DE1261BA2B0F91AE0066066D /* NukeExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,13 +121,12 @@
 				DE48C8962AF3EB85006C617C /* Components */,
 				DE10175C2AFE7BA7007C33FD /* Screen */,
 				DE10175E2B0F8D0A007C33FD /* Extension */,
-				DE1261B12B0F915F0066066D /* ConfettiSwiftUI */,
 				DE1261B42B0F91900066066D /* Cosmos */,
 				DE1261B72B0F91AE0066066D /* Nuke */,
 				DE1261B92B0F91AE0066066D /* NukeExtensions */,
 				DE1261BB2B0F91AE0066066D /* NukeUI */,
 				DE1261BD2B0F91AE0066066D /* NukeVideo */,
-				DE631A112B1A201C00D4B18E /* SwiftyUserDefaults */,
+				DE631A142B2A218000D4B18E /* SwiftyUserDefaults */,
 			);
 			productName = CharacteristicStyleSwiftUIExample;
 			productReference = DE78BCF22AE61C690089AFD2 /* CharacteristicStyleSwiftUIExample.app */;
@@ -160,10 +157,9 @@
 			);
 			mainGroup = DE78BCE92AE61C690089AFD2;
 			packageReferences = (
-				DE1261B02B0F915F0066066D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
 				DE1261B32B0F91900066066D /* XCRemoteSwiftPackageReference "Cosmos" */,
 				DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */,
-				DE631A102B1A201C00D4B18E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */,
+				DE631A132B2A218000D4B18E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */,
 			);
 			productRefGroup = DE78BCF32AE61C690089AFD2 /* Products */;
 			projectDirPath = "";
@@ -398,14 +394,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DE1261B02B0F915F0066066D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
-			};
-		};
 		DE1261B32B0F91900066066D /* XCRemoteSwiftPackageReference "Cosmos" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
@@ -422,7 +410,7 @@
 				minimumVersion = 12.1.6;
 			};
 		};
-		DE631A102B1A201C00D4B18E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */ = {
+		DE631A132B2A218000D4B18E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sunshinejr/SwiftyUserDefaults.git";
 			requirement = {
@@ -440,11 +428,6 @@
 		DE10175E2B0F8D0A007C33FD /* Extension */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Extension;
-		};
-		DE1261B12B0F915F0066066D /* ConfettiSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE1261B02B0F915F0066066D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
-			productName = ConfettiSwiftUI;
 		};
 		DE1261B42B0F91900066066D /* Cosmos */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -479,9 +462,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Components;
 		};
-		DE631A112B1A201C00D4B18E /* SwiftyUserDefaults */ = {
+		DE631A142B2A218000D4B18E /* SwiftyUserDefaults */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DE631A102B1A201C00D4B18E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */;
+			package = DE631A132B2A218000D4B18E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */;
 			productName = SwiftyUserDefaults;
 		};
 		DE78BD052AE623480089AFD2 /* AppFeature */ = {
