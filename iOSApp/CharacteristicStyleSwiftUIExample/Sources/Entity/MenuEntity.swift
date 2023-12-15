@@ -1,6 +1,6 @@
 import Foundation
 
-public struct MenuEntity {
+public struct MenuEntity: Hashable, Decodable {
     
     // MARK: - Property
 
@@ -50,11 +50,11 @@ public struct MenuEntity {
     // MARK: - Hashable
 
     // MEMO: Hashableプロトコルに適合させるための処理
-    func hash(into hasher: inout Hasher) {
+    public func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
 
-    static func == (lhs: MenuEntity, rhs: MenuEntity) -> Bool {
+    public static func == (lhs: MenuEntity, rhs: MenuEntity) -> Bool {
         return lhs.id == rhs.id
     }
 }

@@ -9,6 +9,8 @@ let package = Package(
     products: [
         .library(name: "AppFeature", targets: ["AppFeature"]),
         .library(name: "Components", targets: ["Components"]),
+        .library(name: "Domain", targets: ["Domain"]),
+        .library(name: "Entity", targets: ["Entity"]),
         .library(name: "Extension", targets: ["Extension"]),
         .library(name: "Infrastructure", targets: ["Infrastructure"]),
         .library(name: "Screen", targets: ["Screen"]),
@@ -30,10 +32,13 @@ let package = Package(
                 .product(name: "ConfettiSwiftUI", package: "ConfettiSwiftUI")
             ]
         ),
+        .target(name: "Domain"),
+        .target(name: "Entity"),
         .target(name: "Extension"),
         .target(
             name: "Infrastructure",
             dependencies: [
+                "Entity",
                 .product(name: "SwiftyUserDefaults", package: "SwiftyUserDefaults")
             ]
         ),

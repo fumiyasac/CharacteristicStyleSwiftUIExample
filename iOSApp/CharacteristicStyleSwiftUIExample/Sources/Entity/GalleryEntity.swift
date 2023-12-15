@@ -1,6 +1,6 @@
 import Foundation
 
-public struct GalleryEntity {
+public struct GalleryEntity: Hashable, Decodable {
 
     // MARK: - Property
 
@@ -38,11 +38,11 @@ public struct GalleryEntity {
     // MARK: - Hashable
 
     // MEMO: Hashableプロトコルに適合させるための処理
-    func hash(into hasher: inout Hasher) {
+    public func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
 
-    static func == (lhs: GalleryEntity, rhs: GalleryEntity) -> Bool {
+    public static func == (lhs: GalleryEntity, rhs: GalleryEntity) -> Bool {
         return lhs.id == rhs.id
     }
 }

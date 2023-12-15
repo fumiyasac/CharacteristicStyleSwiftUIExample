@@ -19,6 +19,8 @@
 		DE48C8932AEFFC50006C617C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE48C8922AEFFC50006C617C /* AppDelegate.swift */; };
 		DE48C8972AF3EB85006C617C /* Components in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8962AF3EB85006C617C /* Components */; };
 		DE631A122B1A201C00D4B18E /* SwiftyUserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = DE631A112B1A201C00D4B18E /* SwiftyUserDefaults */; };
+		DE631A1A2B2C9D6500D4B18E /* Entity in Frameworks */ = {isa = PBXBuildFile; productRef = DE631A192B2C9D6500D4B18E /* Entity */; };
+		DE631A1C2B2C9D6A00D4B18E /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = DE631A1B2B2C9D6A00D4B18E /* Domain */; };
 		DE78BCF62AE61C690089AFD2 /* CharacteristicStyleSwiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78BCF52AE61C690089AFD2 /* CharacteristicStyleSwiftUIExampleApp.swift */; };
 		DE78BCFA2AE61C6A0089AFD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78BCF92AE61C6A0089AFD2 /* Assets.xcassets */; };
 		DE78BCFD2AE61C6A0089AFD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78BCFC2AE61C6A0089AFD2 /* Preview Assets.xcassets */; };
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE631A1A2B2C9D6500D4B18E /* Entity in Frameworks */,
 				DE1261B82B0F91AE0066066D /* Nuke in Frameworks */,
 				DE10175D2AFE7BA7007C33FD /* Screen in Frameworks */,
 				DE48C8972AF3EB85006C617C /* Components in Frameworks */,
@@ -46,6 +49,7 @@
 				DE78BD062AE623480089AFD2 /* AppFeature in Frameworks */,
 				DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */,
 				DE10175F2B0F8D0A007C33FD /* Extension in Frameworks */,
+				DE631A1C2B2C9D6A00D4B18E /* Domain in Frameworks */,
 				DE1261BE2B0F91AE0066066D /* NukeVideo in Frameworks */,
 				DE631A122B1A201C00D4B18E /* SwiftyUserDefaults in Frameworks */,
 				DE1261BC2B0F91AE0066066D /* NukeUI in Frameworks */,
@@ -130,6 +134,8 @@
 				DE1261BB2B0F91AE0066066D /* NukeUI */,
 				DE1261BD2B0F91AE0066066D /* NukeVideo */,
 				DE631A112B1A201C00D4B18E /* SwiftyUserDefaults */,
+				DE631A192B2C9D6500D4B18E /* Entity */,
+				DE631A1B2B2C9D6A00D4B18E /* Domain */,
 			);
 			productName = CharacteristicStyleSwiftUIExample;
 			productReference = DE78BCF22AE61C690089AFD2 /* CharacteristicStyleSwiftUIExample.app */;
@@ -483,6 +489,14 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE631A102B1A201C00D4B18E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */;
 			productName = SwiftyUserDefaults;
+		};
+		DE631A192B2C9D6500D4B18E /* Entity */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Entity;
+		};
+		DE631A1B2B2C9D6A00D4B18E /* Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Domain;
 		};
 		DE78BD052AE623480089AFD2 /* AppFeature */ = {
 			isa = XCSwiftPackageProductDependency;

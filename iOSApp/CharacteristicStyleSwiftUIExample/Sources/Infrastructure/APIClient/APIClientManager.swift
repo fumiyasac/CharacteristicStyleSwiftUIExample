@@ -26,6 +26,8 @@ enum APIRequestState {
 protocol APIClientManagerProtocol {
 
     // MEMO: APIClientManagerはasync/awaitを利用して書く
+    //func getAnnouncementsBy(page: Int) async throws -> AnnouncementsAPIResponse
+    //func getGalleries() async throws -> AnnouncementListAPIResponse
 }
 
 final class ApiClientManager {
@@ -39,7 +41,10 @@ final class ApiClientManager {
     // MARK: - Enum
 
     private enum EndPoint: String {
-        case pickupGourmetCuration = "pickup"
+
+        case announcement
+        case gallery
+        case menu
 
         func getBaseUrl() -> String {
             return [host, self.rawValue].joined(separator: "/")
