@@ -27,7 +27,7 @@ protocol APIClientManagerProtocol {
 
     // MEMO: APIClientManagerはasync/awaitを利用して書く
     //func getAnnouncementsBy(page: Int) async throws -> AnnouncementsAPIResponse
-    //func getGalleries() async throws -> AnnouncementListAPIResponse
+    //func getGalleries() async throws -> GalleryAPIResponse
 }
 
 final class ApiClientManager {
