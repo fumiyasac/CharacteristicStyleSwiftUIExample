@@ -24,10 +24,9 @@ enum APIRequestState {
 // MARK: - Protocol
 
 protocol APIClientManagerProtocol {
-
-    // MEMO: APIClientManagerはasync/awaitを利用して書く
     //func getAnnouncementsBy(page: Int) async throws -> AnnouncementsAPIResponse
-    //func getGalleries() async throws -> GalleryAPIResponse
+    //func getGalleries() async throws -> GalleriesAPIResponse
+    //func getMenus() async throws -> MenusAPIResponse
 }
 
 final class ApiClientManager {
