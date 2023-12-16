@@ -1,3 +1,4 @@
+import Entity
 import Foundation
 
 // MARK: - Enum
@@ -24,9 +25,9 @@ enum APIRequestState {
 // MARK: - Protocol
 
 protocol APIClientManagerProtocol {
-    //func getAnnouncementsBy(page: Int) async throws -> AnnouncementsAPIResponse
-    //func getGalleries() async throws -> GalleriesAPIResponse
-    //func getMenus() async throws -> MenusAPIResponse
+    func getAnnouncementsBy(page: Int) async throws -> AnnouncementsAPIResponse
+    func getGalleries() async throws -> GalleriesAPIResponse
+    func getMenus() async throws -> MenusAPIResponse
 }
 
 final class ApiClientManager {
@@ -41,9 +42,10 @@ final class ApiClientManager {
 
     private enum EndPoint: String {
 
-        case announcement
-        case gallery
-        case menu
+        // MEMO: API通信用のエンドポイント定義
+        case announcements
+        case galleries
+        case menus
 
         func getBaseUrl() -> String {
             return [host, self.rawValue].joined(separator: "/")
@@ -178,4 +180,32 @@ final class ApiClientManager {
 
 // MARK: - ApiClientManagerProtocol
 
-extension ApiClientManager: APIClientManagerProtocol {}
+extension ApiClientManager: APIClientManagerProtocol {
+
+    func getAnnouncementsBy(page: Int) async throws -> AnnouncementsAPIResponse {
+        let result = try await executeAPIRequest(
+            endpointUrl: EndPoint.announcements.getBaseUrl() + "?page=" + String(page),
+            httpMethod: HTTPMethod.GET,
+            responseFormat: [AnnouncementEntity].self
+        )
+        return AnnouncementsAPIResponse(result: result)
+    }
+
+    func getGalleries() async throws -> GalleriesAPIResponse {
+        let result = try await executeAPIRequest(
+            endpointUrl: EndPoint.galleries.getBaseUrl(),
+            httpMethod: HTTPMethod.GET,
+            responseFormat: [GalleryEntity].self
+        )
+        return GalleriesAPIResponse(result: result)
+    }
+
+    func getMenus() async throws -> MenusAPIResponse {
+        let result = try await executeAPIRequest(
+            endpointUrl: EndPoint.menus.getBaseUrl(),
+            httpMethod: HTTPMethod.GET,
+            responseFormat: [MenuEntity].self
+        )
+        return MenusAPIResponse(result: result)
+    }
+}
