@@ -21,7 +21,7 @@
     {
       "identity" : "cosmos",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/evgenyneu/Cosmos",
+      "location" : "https://github.com/evgenyneu/Cosmos.git",
       "state" : {
         "branch" : "master",
         "revision" : "cce521e734d0090494bd4afab5fd2e2f2465c1af"
@@ -30,10 +30,10 @@
     {
       "identity" : "nuke",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/kean/Nuke",
+      "location" : "https://github.com/kean/Nuke.git",
       "state" : {
-        "revision" : "3f666f120b63ea7de57d42e9a7c9b47f8e7a290b",
-        "version" : "12.1.6"
+        "revision" : "1694798e876113d44f6ec6ead965d7286695981d",
+        "version" : "12.2.0"
       }
     },
     {
