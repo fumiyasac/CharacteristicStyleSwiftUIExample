@@ -1,3 +1,28 @@
 import Foundation
 
-struct AnnouncementViewObject {}
+struct AnnouncementViewObject {
+
+    // MARK: - Property
+
+    let id: Int
+    let title: String
+    let subtitle: String
+    let thumbnailUrl: String
+    let publishedAt: String
+
+    // MARK: - Initializer
+
+    init(
+        id: Int,
+        title: String,
+        subtitle: String, 
+        thumbnailUrl: String,
+        publishedAt: String
+    ) {
+        self.id = id
+        self.title = title
+        self.subtitle = subtitle
+        self.thumbnailUrl = thumbnailUrl
+        self.publishedAt = publishedAt
+    }
+}
