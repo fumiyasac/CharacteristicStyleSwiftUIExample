@@ -2,4 +2,4 @@ import Foundation
 import Observation
 
 @Observable
-final class MenuViewModel {}
+final class AnnouncementViewStateProvider {}
