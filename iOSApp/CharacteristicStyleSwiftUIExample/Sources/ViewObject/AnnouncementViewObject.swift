@@ -1,6 +1,6 @@
 import Foundation
 
-struct AnnouncementViewObject {
+public struct AnnouncementViewObject {
 
     // MARK: - Property
 

@@ -1,6 +1,6 @@
 import Foundation
 
-struct GalleryViewObject {
+public struct GalleryViewObject {
 
     // MARK: - Property
 

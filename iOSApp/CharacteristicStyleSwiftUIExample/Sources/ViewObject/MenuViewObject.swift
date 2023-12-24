@@ -1,6 +1,6 @@
 import Foundation
 
-struct MenuViewObject {
+public struct MenuViewObject {
     
     // MARK: - Property
     
