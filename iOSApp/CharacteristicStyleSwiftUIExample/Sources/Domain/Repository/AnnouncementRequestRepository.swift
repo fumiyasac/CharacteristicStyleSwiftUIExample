@@ -1,3 +1,7 @@
 import Foundation
 
-protocol AnnouncementRequestRepository {}
+public protocol AnnouncementRequestRepository {}
+
+public class AnnouncementRequestRepositoryImpl: AnnouncementRequestRepository {
+    
+}

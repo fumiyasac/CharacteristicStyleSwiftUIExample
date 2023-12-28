@@ -46,7 +46,14 @@ let package = Package(
         ),
         .target(name: "Screen"),
         .target(name: "ViewObject"),
-        .target(name: "ViewStateProvider")
+        .target(
+            name: "ViewStateProvider",
+            dependencies: [
+                "Domain",
+                "Entity",
+                "ViewObject"
+            ]
+        )
 // このModule内でUnitTestが必要ならば下記をコメントインしてUnitTestを記載する
 //        .testTarget(
 //            name: "CharacteristicStyleSwiftUIExampleTests",
