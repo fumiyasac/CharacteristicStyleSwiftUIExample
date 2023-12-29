@@ -25,7 +25,13 @@ let package = Package(
         .package(url: "https://github.com/sunshinejr/SwiftyUserDefaults.git", from: "5.3.0")
     ],
     targets: [
-        .target(name: "AppFeature"),
+        .target(
+            name: "AppFeature",
+            dependencies: [
+                "Extension",
+                "Screen"
+            ]
+        ),
         .target(
             name: "Components",
             dependencies: [
@@ -44,7 +50,15 @@ let package = Package(
                 .product(name: "SwiftyUserDefaults", package: "SwiftyUserDefaults")
             ]
         ),
-        .target(name: "Screen"),
+        .target(
+            name: "Screen",
+            dependencies: [
+                "Extension",
+                "Components",
+                "ViewObject",
+                "ViewStateProvider",
+            ]
+        ),
         .target(name: "ViewObject"),
         .target(
             name: "ViewStateProvider",

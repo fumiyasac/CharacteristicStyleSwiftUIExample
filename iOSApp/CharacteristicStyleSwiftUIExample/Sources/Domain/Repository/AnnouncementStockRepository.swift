@@ -1,5 +1,10 @@
+import Entity
 import Foundation
 
-protocol AnnouncementStockRepository {
+public protocol AnnouncementStockRepository {
+    // TODO:
+}
+
+public class AnnouncementStockRepositoryImpl: AnnouncementStockRepository {
     
 }
