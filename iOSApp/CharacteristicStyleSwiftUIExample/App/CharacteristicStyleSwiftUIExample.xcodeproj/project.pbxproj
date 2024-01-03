@@ -15,6 +15,7 @@
 		DE1261BA2B0F91AE0066066D /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B92B0F91AE0066066D /* NukeExtensions */; };
 		DE1261BC2B0F91AE0066066D /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261BB2B0F91AE0066066D /* NukeUI */; };
 		DE1261BE2B0F91AE0066066D /* NukeVideo in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261BD2B0F91AE0066066D /* NukeVideo */; };
+		DE1FF3BB2B458FB800B0BF22 /* ViewStateProvider in Frameworks */ = {isa = PBXBuildFile; productRef = DE1FF3BA2B458FB800B0BF22 /* ViewStateProvider */; };
 		DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8902AEC0100006C617C /* Infrastructure */; };
 		DE48C8932AEFFC50006C617C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE48C8922AEFFC50006C617C /* AppDelegate.swift */; };
 		DE48C8972AF3EB85006C617C /* Components in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8962AF3EB85006C617C /* Components */; };
@@ -50,6 +51,7 @@
 				DE78BD062AE623480089AFD2 /* AppFeature in Frameworks */,
 				DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */,
 				DE631A1E2B2E9C9400D4B18E /* ViewObject in Frameworks */,
+				DE1FF3BB2B458FB800B0BF22 /* ViewStateProvider in Frameworks */,
 				DE10175F2B0F8D0A007C33FD /* Extension in Frameworks */,
 				DE631A1C2B2C9D6A00D4B18E /* Domain in Frameworks */,
 				DE1261BE2B0F91AE0066066D /* NukeVideo in Frameworks */,
@@ -139,6 +141,7 @@
 				DE631A192B2C9D6500D4B18E /* Entity */,
 				DE631A1B2B2C9D6A00D4B18E /* Domain */,
 				DE631A1D2B2E9C9400D4B18E /* ViewObject */,
+				DE1FF3BA2B458FB800B0BF22 /* ViewStateProvider */,
 			);
 			productName = CharacteristicStyleSwiftUIExample;
 			productReference = DE78BCF22AE61C690089AFD2 /* CharacteristicStyleSwiftUIExample.app */;
@@ -479,6 +482,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = NukeVideo;
+		};
+		DE1FF3BA2B458FB800B0BF22 /* ViewStateProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ViewStateProvider;
 		};
 		DE48C8902AEC0100006C617C /* Infrastructure */ = {
 			isa = XCSwiftPackageProductDependency;

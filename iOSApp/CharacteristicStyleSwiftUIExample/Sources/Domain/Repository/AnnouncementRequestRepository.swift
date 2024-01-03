@@ -6,7 +6,7 @@ public protocol AnnouncementRequestRepository {
     func getAnnouncementsBy(page: Int) async throws -> [AnnouncementEntity]
 }
 
-public class AnnouncementRequestRepositoryImpl: AnnouncementRequestRepository {
+public final class AnnouncementRequestRepositoryImpl: AnnouncementRequestRepository {
     
     private let apiClientManager: ApiClientManager
 

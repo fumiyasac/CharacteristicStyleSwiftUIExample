@@ -30,7 +30,7 @@ public protocol APIClientManagerProtocol {
     func getMenus() async throws -> MenusAPIResponse
 }
 
-public class ApiClientManager {
+public final class ApiClientManager {
 
     // MARK: - Singleton Instance
 

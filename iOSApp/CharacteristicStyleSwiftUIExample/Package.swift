@@ -14,7 +14,8 @@ let package = Package(
         .library(name: "Extension", targets: ["Extension"]),
         .library(name: "Infrastructure", targets: ["Infrastructure"]),
         .library(name: "Screen", targets: ["Screen"]),
-        .library(name: "ViewObject", targets: ["ViewObject"])
+        .library(name: "ViewObject", targets: ["ViewObject"]),
+        .library(name: "ViewStateProvider", targets: ["ViewStateProvider"])
     ],
     dependencies: [
         .package(url: "https://github.com/evgenyneu/Cosmos", branch: "master"),
@@ -43,8 +44,7 @@ let package = Package(
             name: "Domain",
             dependencies: [
                 "Entity",
-                "Infrastructure",
-                "ViewObject"
+                "Infrastructure"
             ]
         ),
         .target(name: "Entity"),
@@ -60,10 +60,9 @@ let package = Package(
             name: "Screen",
             dependencies: [
                 "Components",
-                "Domain",
-                "Entity",
                 "Extension",
                 "ViewObject",
+                "ViewStateProvider",
             ]
         ),
         .target(
@@ -72,6 +71,14 @@ let package = Package(
                 "Entity",
             ]
         ),
+        .target(
+            name: "ViewStateProvider",
+            dependencies: [
+                "Domain",
+                "Entity",
+                "ViewObject",
+            ]
+        )
 // このModule内でUnitTestが必要ならば下記をコメントインしてUnitTestを記載する
 //        .testTarget(
 //            name: "CharacteristicStyleSwiftUIExampleTests",

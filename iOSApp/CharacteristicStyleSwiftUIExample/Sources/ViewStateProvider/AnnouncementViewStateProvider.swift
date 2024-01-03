@@ -4,9 +4,10 @@ import Observation
 import ViewObject
 
 @Observable
-final class AnnouncementViewStateProvider {
+public final class AnnouncementViewStateProvider {
     
     // MARK: - Property
+
     private let announcementRepository: AnnouncementRequestRepository
 
     private(set) var announcementViewObjects: [AnnouncementViewObject] = []

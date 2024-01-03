@@ -5,6 +5,6 @@ public protocol AnnouncementStockRepository {
     // TODO: SwiftDataへ新規登録or削除をする処理を記載する
 }
 
-public class AnnouncementStockRepositoryImpl: AnnouncementStockRepository {
+public final class AnnouncementStockRepositoryImpl: AnnouncementStockRepository {
     
 }
