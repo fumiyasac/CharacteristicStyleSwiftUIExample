@@ -22,7 +22,6 @@
 		DE631A1A2B2C9D6500D4B18E /* Entity in Frameworks */ = {isa = PBXBuildFile; productRef = DE631A192B2C9D6500D4B18E /* Entity */; };
 		DE631A1C2B2C9D6A00D4B18E /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = DE631A1B2B2C9D6A00D4B18E /* Domain */; };
 		DE631A1E2B2E9C9400D4B18E /* ViewObject in Frameworks */ = {isa = PBXBuildFile; productRef = DE631A1D2B2E9C9400D4B18E /* ViewObject */; };
-		DE631A202B2E9C9C00D4B18E /* ViewStateProvider in Frameworks */ = {isa = PBXBuildFile; productRef = DE631A1F2B2E9C9C00D4B18E /* ViewStateProvider */; };
 		DE78BCF62AE61C690089AFD2 /* CharacteristicStyleSwiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78BCF52AE61C690089AFD2 /* CharacteristicStyleSwiftUIExampleApp.swift */; };
 		DE78BCFA2AE61C6A0089AFD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78BCF92AE61C6A0089AFD2 /* Assets.xcassets */; };
 		DE78BCFD2AE61C6A0089AFD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78BCFC2AE61C6A0089AFD2 /* Preview Assets.xcassets */; };
@@ -51,7 +50,6 @@
 				DE78BD062AE623480089AFD2 /* AppFeature in Frameworks */,
 				DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */,
 				DE631A1E2B2E9C9400D4B18E /* ViewObject in Frameworks */,
-				DE631A202B2E9C9C00D4B18E /* ViewStateProvider in Frameworks */,
 				DE10175F2B0F8D0A007C33FD /* Extension in Frameworks */,
 				DE631A1C2B2C9D6A00D4B18E /* Domain in Frameworks */,
 				DE1261BE2B0F91AE0066066D /* NukeVideo in Frameworks */,
@@ -141,7 +139,6 @@
 				DE631A192B2C9D6500D4B18E /* Entity */,
 				DE631A1B2B2C9D6A00D4B18E /* Domain */,
 				DE631A1D2B2E9C9400D4B18E /* ViewObject */,
-				DE631A1F2B2E9C9C00D4B18E /* ViewStateProvider */,
 			);
 			productName = CharacteristicStyleSwiftUIExample;
 			productReference = DE78BCF22AE61C690089AFD2 /* CharacteristicStyleSwiftUIExample.app */;
@@ -507,10 +504,6 @@
 		DE631A1D2B2E9C9400D4B18E /* ViewObject */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ViewObject;
-		};
-		DE631A1F2B2E9C9C00D4B18E /* ViewStateProvider */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ViewStateProvider;
 		};
 		DE78BD052AE623480089AFD2 /* AppFeature */ = {
 			isa = XCSwiftPackageProductDependency;

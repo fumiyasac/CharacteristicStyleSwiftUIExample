@@ -1,9 +1,9 @@
 import Entity
 import Foundation
 
-struct GalleriesAPIResponse: Decodable, Equatable {
+public struct GalleriesAPIResponse: Decodable, Equatable {
 
-    let result: [GalleryEntity]
+    public let result: [GalleryEntity]
 
     // MARK: - Enum
 
@@ -13,12 +13,12 @@ struct GalleriesAPIResponse: Decodable, Equatable {
 
     // MARK: - Initializer
 
-    init(result: [GalleryEntity]) {
+    public init(result: [GalleryEntity]) {
         self.result = result
     }
 
     // JSONの配列内の要素を取得する → JSONの配列内の要素にある値をDecodeして初期化する
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: Keys.self)
         self.result = try container.decode([GalleryEntity].self, forKey: .result)
     }
@@ -27,7 +27,7 @@ struct GalleriesAPIResponse: Decodable, Equatable {
 
     // MEMO: Equatableプロトコルに適合させるための処理
 
-    static func == (lhs: GalleriesAPIResponse, rhs: GalleriesAPIResponse) -> Bool {
+    public static func == (lhs: GalleriesAPIResponse, rhs: GalleriesAPIResponse) -> Bool {
         return lhs.result == rhs.result
     }
 }

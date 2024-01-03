@@ -1,9 +1,9 @@
 import Entity
 import Foundation
 
-struct AnnouncementsAPIResponse: Decodable, Equatable {
+public struct AnnouncementsAPIResponse: Decodable, Equatable {
 
-    let result: [AnnouncementEntity]
+    public let result: [AnnouncementEntity]
 
     // MARK: - Enum
 
@@ -13,12 +13,12 @@ struct AnnouncementsAPIResponse: Decodable, Equatable {
 
     // MARK: - Initializer
 
-    init(result: [AnnouncementEntity]) {
+    public init(result: [AnnouncementEntity]) {
         self.result = result
     }
 
     // JSONの配列内の要素を取得する → JSONの配列内の要素にある値をDecodeして初期化する
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: Keys.self)
         self.result = try container.decode([AnnouncementEntity].self, forKey: .result)
     }
@@ -27,7 +27,7 @@ struct AnnouncementsAPIResponse: Decodable, Equatable {
 
     // MEMO: Equatableプロトコルに適合させるための処理
 
-    static func == (lhs: AnnouncementsAPIResponse, rhs: AnnouncementsAPIResponse) -> Bool {
+    public static func == (lhs: AnnouncementsAPIResponse, rhs: AnnouncementsAPIResponse) -> Bool {
         return lhs.result == rhs.result
     }
 }

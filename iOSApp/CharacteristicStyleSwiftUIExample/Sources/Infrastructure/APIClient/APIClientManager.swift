@@ -24,17 +24,17 @@ enum APIRequestState {
 
 // MARK: - Protocol
 
-protocol APIClientManagerProtocol {
+public protocol APIClientManagerProtocol {
     func getAnnouncementsBy(page: Int) async throws -> AnnouncementsAPIResponse
     func getGalleries() async throws -> GalleriesAPIResponse
     func getMenus() async throws -> MenusAPIResponse
 }
 
-final class ApiClientManager {
+public class ApiClientManager {
 
     // MARK: - Singleton Instance
 
-    static let shared = ApiClientManager()
+    public static let shared = ApiClientManager()
 
     private init() {}
 
@@ -182,7 +182,7 @@ final class ApiClientManager {
 
 extension ApiClientManager: APIClientManagerProtocol {
 
-    func getAnnouncementsBy(page: Int) async throws -> AnnouncementsAPIResponse {
+    public func getAnnouncementsBy(page: Int) async throws -> AnnouncementsAPIResponse {
         let result = try await executeAPIRequest(
             endpointUrl: EndPoint.announcements.getBaseUrl() + "?page=" + String(page),
             httpMethod: HTTPMethod.GET,
@@ -191,7 +191,7 @@ extension ApiClientManager: APIClientManagerProtocol {
         return AnnouncementsAPIResponse(result: result)
     }
 
-    func getGalleries() async throws -> GalleriesAPIResponse {
+    public func getGalleries() async throws -> GalleriesAPIResponse {
         let result = try await executeAPIRequest(
             endpointUrl: EndPoint.galleries.getBaseUrl(),
             httpMethod: HTTPMethod.GET,
@@ -200,7 +200,7 @@ extension ApiClientManager: APIClientManagerProtocol {
         return GalleriesAPIResponse(result: result)
     }
 
-    func getMenus() async throws -> MenusAPIResponse {
+    public func getMenus() async throws -> MenusAPIResponse {
         let result = try await executeAPIRequest(
             endpointUrl: EndPoint.menus.getBaseUrl(),
             httpMethod: HTTPMethod.GET,

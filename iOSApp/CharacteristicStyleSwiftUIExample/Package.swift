@@ -14,8 +14,7 @@ let package = Package(
         .library(name: "Extension", targets: ["Extension"]),
         .library(name: "Infrastructure", targets: ["Infrastructure"]),
         .library(name: "Screen", targets: ["Screen"]),
-        .library(name: "ViewObject", targets: ["ViewObject"]),
-        .library(name: "ViewStateProvider", targets: ["ViewStateProvider"])
+        .library(name: "ViewObject", targets: ["ViewObject"])
     ],
     dependencies: [
         .package(url: "https://github.com/evgenyneu/Cosmos", branch: "master"),
@@ -40,7 +39,14 @@ let package = Package(
                 .product(name: "ConfettiSwiftUI", package: "ConfettiSwiftUI")
             ]
         ),
-        .target(name: "Domain"),
+        .target(
+            name: "Domain",
+            dependencies: [
+                "Entity",
+                "Infrastructure",
+                "ViewObject"
+            ]
+        ),
         .target(name: "Entity"),
         .target(name: "Extension"),
         .target(
@@ -53,21 +59,19 @@ let package = Package(
         .target(
             name: "Screen",
             dependencies: [
-                "Extension",
                 "Components",
-                "ViewObject",
-                "ViewStateProvider",
-            ]
-        ),
-        .target(name: "ViewObject"),
-        .target(
-            name: "ViewStateProvider",
-            dependencies: [
                 "Domain",
                 "Entity",
-                "ViewObject"
+                "Extension",
+                "ViewObject",
             ]
-        )
+        ),
+        .target(
+            name: "ViewObject",
+            dependencies: [
+                "Entity",
+            ]
+        ),
 // このModule内でUnitTestが必要ならば下記をコメントインしてUnitTestを記載する
 //        .testTarget(
 //            name: "CharacteristicStyleSwiftUIExampleTests",

@@ -1,10 +1,20 @@
 import Entity
 import Foundation
+import Infrastructure
 
 public protocol AnnouncementRequestRepository {
-    // TODO: APIから一覧データを取得する処理を記載する
+    func getAnnouncementsBy(page: Int) async throws -> [AnnouncementEntity]
 }
 
 public class AnnouncementRequestRepositoryImpl: AnnouncementRequestRepository {
     
+    private let apiClientManager: ApiClientManager
+
+    public init(apiClientManager: ApiClientManager = ApiClientManager.shared) {
+        self.apiClientManager = apiClientManager
+    }
+
+    public func getAnnouncementsBy(page: Int) async throws -> [AnnouncementEntity] {
+        try await apiClientManager.getAnnouncementsBy(page: page).result
+    }
 }
