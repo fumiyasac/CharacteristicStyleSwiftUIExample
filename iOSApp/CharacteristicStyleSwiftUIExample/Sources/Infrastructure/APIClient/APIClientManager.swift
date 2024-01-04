@@ -10,12 +10,12 @@ enum HTTPMethod {
 }
 
 // MEMO: APIエラーメッセージに関するEnum定義
-enum APIError: Error {
+public enum APIError: Error {
     case error(message: String)
 }
 
 // MEMO: APIリクエストの状態に関するEnum定義
-enum APIRequestState {
+public enum APIRequestState {
     case none
     case requesting
     case success

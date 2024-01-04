@@ -4,26 +4,29 @@ public struct AnnouncementViewObject {
 
     // MARK: - Property
 
-    let id: Int
-    let title: String
-    let subtitle: String
-    let thumbnailUrl: URL?
-    let publishedAt: String
-    let isFavorited: Bool
+    public let id: Int
+    public let title: String
+    public let category: String
+    public let summary: String
+    public let thumbnailUrl: URL?
+    public let publishedAt: String
+    public let isFavorited: Bool
 
     // MARK: - Initializer
 
-    init(
+    public init(
         id: Int,
         title: String,
-        subtitle: String, 
+        category: String,
+        summary: String,
         thumbnailUrl: String,
         publishedAt: String,
         isFavorited: Bool
     ) {
         self.id = id
         self.title = title
-        self.subtitle = subtitle
+        self.category = category
+        self.summary = summary
         self.thumbnailUrl = URL(string: thumbnailUrl) ?? nil
         self.publishedAt = publishedAt
         self.isFavorited = isFavorited

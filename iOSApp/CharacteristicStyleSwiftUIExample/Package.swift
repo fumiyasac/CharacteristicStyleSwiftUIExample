@@ -76,6 +76,7 @@ let package = Package(
             dependencies: [
                 "Domain",
                 "Entity",
+                "Infrastructure",
                 "ViewObject",
             ]
         )

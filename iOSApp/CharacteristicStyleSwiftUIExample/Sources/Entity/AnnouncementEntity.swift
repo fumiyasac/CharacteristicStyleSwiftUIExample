@@ -4,12 +4,12 @@ public struct AnnouncementEntity: Hashable, Decodable {
 
     // MARK: - Property
 
-    let id: Int
-    let title: String
-    let category: String
-    let summary: String
-    let thumbnailUrl: String
-    let publishedAt: String
+    public let id: Int
+    public let title: String
+    public let category: String
+    public let summary: String
+    public let thumbnailUrl: String
+    public let publishedAt: String
 
     // MARK: - Enum
 
