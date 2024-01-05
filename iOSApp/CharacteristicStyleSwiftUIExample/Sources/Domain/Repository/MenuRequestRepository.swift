@@ -1,10 +1,28 @@
 import Entity
 import Foundation
+import Infrastructure
+
+// MARK: - Protocol
 
 public protocol MenuRequestRepository {
-    // TODO: APIから一覧データを取得する処理を記載する
+    func getMenus() async throws -> [MenuEntity]
 }
 
 public final class MenuRequestRepositoryImpl: MenuRequestRepository {
     
+    // MARK: - Property
+
+    private let apiClientManager: ApiClientManager
+
+    // MARK: - Initializer
+
+    public init(apiClientManager: ApiClientManager = ApiClientManager.shared) {
+        self.apiClientManager = apiClientManager
+    }
+
+    // MARK: - Function
+
+    public func getMenus() async throws -> [MenuEntity] {
+        try await apiClientManager.getMenus().result
+    }
 }
