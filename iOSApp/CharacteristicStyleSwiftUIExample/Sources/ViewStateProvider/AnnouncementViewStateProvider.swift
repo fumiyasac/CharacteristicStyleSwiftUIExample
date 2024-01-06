@@ -11,10 +11,11 @@ public final class AnnouncementViewStateProvider {
 
     private let announcementRepository: AnnouncementRequestRepository
 
-    private(set) var announcementViewObjects: [AnnouncementViewObject] = []
-
     private let itemsPerPageCount: Int = 10
     private var requestStatus: APIRequestState = .none
+
+    // MEMO: 一覧表示に関係するProperty（●●●ViewObjectsの様な命名をしている）
+    private(set) var announcementViewObjects: [AnnouncementViewObject] = []
 
     private var currentPage: Int {
         return Int(ceil(Double(announcementViewObjects.count) / Double(itemsPerPageCount)))
@@ -49,7 +50,7 @@ public final class AnnouncementViewStateProvider {
                 self.requestStatus = .success
             } catch let error {
                 // MEMO: 本来ならばエラーハンドリング処理等を入れる必要がある
-                print("Fetch Country List Error: " + error.localizedDescription)
+                print("Fetch Announcement List Error: " + error.localizedDescription)
                 self.requestStatus = .error
             }
         }
