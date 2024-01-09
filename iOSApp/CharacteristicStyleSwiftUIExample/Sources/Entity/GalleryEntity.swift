@@ -4,11 +4,11 @@ public struct GalleryEntity: Hashable, Decodable {
 
     // MARK: - Property
 
-    let id: Int
-    let title: String
-    let subtitle: String
-    let thumbnailUrl: String
-    let publishedAt: String
+    public let id: Int
+    public let title: String
+    public let subtitle: String
+    public let thumbnailUrl: String
+    public let publishedAt: String
 
     // MARK: - Enum
 

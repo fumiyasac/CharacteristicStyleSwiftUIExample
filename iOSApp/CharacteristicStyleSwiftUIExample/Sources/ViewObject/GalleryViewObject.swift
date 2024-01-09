@@ -4,15 +4,15 @@ public struct GalleryViewObject {
 
     // MARK: - Property
 
-    let id: Int
-    let title: String
-    let subtitle: String
-    let thumbnailUrl: URL?
-    let publishedAt: String
+    public let id: Int
+    public let title: String
+    public let subtitle: String
+    public let thumbnailUrl: URL?
+    public let publishedAt: String
 
     // MARK: - Initializer
 
-    init(
+    public init(
         id: Int,
         title: String,
         subtitle: String, 

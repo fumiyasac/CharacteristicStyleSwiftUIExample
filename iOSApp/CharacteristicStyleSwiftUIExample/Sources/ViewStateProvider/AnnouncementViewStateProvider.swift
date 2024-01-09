@@ -50,7 +50,7 @@ public final class AnnouncementViewStateProvider {
                 self.requestStatus = .success
             } catch let error {
                 // MEMO: 本来ならばエラーハンドリング処理等を入れる必要がある
-                print("Fetch Announcement List Error: " + error.localizedDescription)
+                print("Fetch Announcements Error: " + error.localizedDescription)
                 self.requestStatus = .error
             }
         }
