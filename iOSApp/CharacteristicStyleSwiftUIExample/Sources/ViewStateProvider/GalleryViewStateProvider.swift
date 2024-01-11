@@ -24,7 +24,7 @@ public final class GalleryViewStateProvider {
 
     // MARK: - Function
 
-    func fetchgalleries() {
+    func fetchGalleries() {
         Task { @MainActor in
             self.requestStatus = .requesting
             do {
