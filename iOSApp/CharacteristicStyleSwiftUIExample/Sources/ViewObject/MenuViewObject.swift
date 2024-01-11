@@ -3,20 +3,20 @@ import Foundation
 public struct MenuViewObject {
     
     // MARK: - Property
-    
-    let id: Int
-    let name: String
-    let catchCopy: String
-    let summary: String
-    let foodCategory: String
-    let price: Int
-    let rate: Double
-    let thumbnailUrl: URL?
-    let publishedAt: String
+
+    public let id: Int
+    public let name: String
+    public let catchCopy: String
+    public let summary: String
+    public let foodCategory: String
+    public let price: Int
+    public let rate: Double
+    public let thumbnailUrl: URL?
+    public let publishedAt: String
 
     // MARK: - Initializer
 
-    init(
+    public init(
         id: Int,
         name: String,
         catchCopy: String,
