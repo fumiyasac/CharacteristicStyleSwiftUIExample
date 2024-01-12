@@ -23,13 +23,13 @@ public final class AnnouncementViewStateProvider {
 
     // MARK: - Initializer
 
-    init(announcementRepository: AnnouncementRequestRepository = AnnouncementRequestRepositoryImpl()) {
+    public init(announcementRepository: AnnouncementRequestRepository = AnnouncementRequestRepositoryImpl()) {
         self.announcementRepository = announcementRepository
     }
 
     // MARK: - Function
 
-    func fetchAnnouncements() {
+    public func fetchAnnouncements() {
         // TODO: この形がまだ不完全なので、これから作成する
         Task { @MainActor in
             self.requestStatus = .requesting
