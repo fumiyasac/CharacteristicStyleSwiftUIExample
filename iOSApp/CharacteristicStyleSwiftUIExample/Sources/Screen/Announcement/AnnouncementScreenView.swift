@@ -3,6 +3,8 @@ import SwiftUI
 import ViewStateProvider
 import ViewObject
 
+// TODO: Pagination込みの表現をするView要素
+
 public struct AnnouncementScreenView: View {
 
     // MARK: - ViewStateProvider
