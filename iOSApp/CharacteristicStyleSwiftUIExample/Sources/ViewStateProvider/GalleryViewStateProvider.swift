@@ -18,13 +18,13 @@ public final class GalleryViewStateProvider {
 
     // MARK: - Initializer
 
-    init(galleryRequestRepository: GalleryRequestRepository = GalleryRequestRepositoryImpl()) {
+    public init(galleryRequestRepository: GalleryRequestRepository = GalleryRequestRepositoryImpl()) {
         self.galleryRequestRepository = galleryRequestRepository
     }
 
     // MARK: - Function
 
-    func fetchGalleries() {
+    public func fetchGalleries() {
         Task { @MainActor in
             self.requestStatus = .requesting
             do {
