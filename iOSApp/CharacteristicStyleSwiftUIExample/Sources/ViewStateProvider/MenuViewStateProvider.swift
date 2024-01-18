@@ -18,13 +18,13 @@ public final class MenuViewStateProvider {
 
     // MARK: - Initializer
 
-    init(menuRequestRepository: MenuRequestRepository = MenuRequestRepositoryImpl()) {
+    public init(menuRequestRepository: MenuRequestRepository = MenuRequestRepositoryImpl()) {
         self.menuRequestRepository = menuRequestRepository
     }
 
     // MARK: - Function
 
-    func fetchMenus() {
+    public func fetchMenus() {
         Task { @MainActor in
             self.requestStatus = .requesting
             do {

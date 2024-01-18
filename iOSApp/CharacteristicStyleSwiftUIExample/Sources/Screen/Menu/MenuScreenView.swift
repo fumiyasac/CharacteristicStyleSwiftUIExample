@@ -1,10 +1,21 @@
+import Extension
 import SwiftUI
+import ViewStateProvider
+import ViewObject
 
 public struct MenuScreenView: View {
 
+    // MARK: - ViewStateProvider
+
+    @State private var viewStateProvider: MenuViewStateProvider
+
     // MARK: - Initializer
 
-    public init() {}
+    // MARK: - Initializer
+
+    public init(viewStateProvider: MenuViewStateProvider = MenuViewStateProvider()) {
+        self.viewStateProvider = viewStateProvider
+    }
 
     // MARK: - Body
     
