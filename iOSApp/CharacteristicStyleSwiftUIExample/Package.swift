@@ -79,11 +79,12 @@ let package = Package(
                 "Infrastructure",
                 "ViewObject",
             ]
-        )
-// このModule内でUnitTestが必要ならば下記をコメントインしてUnitTestを記載する
-//        .testTarget(
-//            name: "CharacteristicStyleSwiftUIExampleTests",
-//            dependencies: ["CharacteristicStyleSwiftUIExample"]
-//        ),
+        ),
+        .testTarget(
+            name: "ViewStateProviderTests",
+            dependencies: [
+                "ViewStateProvider",
+            ]
+        ),
     ]
 )
