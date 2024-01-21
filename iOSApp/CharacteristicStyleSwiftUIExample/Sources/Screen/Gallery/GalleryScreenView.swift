@@ -18,7 +18,12 @@ public struct GalleryScreenView: View {
     // MARK: - Body
 
     public var body: some View {
-        Text("GalleryScreen")
+        Group {
+            Text("GalleryScreen")
+        }
+        .onFirstAppear {
+            viewStateProvider.fetchGalleries()
+        }
     }
 }
 
