@@ -20,7 +20,12 @@ public struct MenuScreenView: View {
     // MARK: - Body
     
     public var body: some View {
-        Text("MenuScreen")
+        Group {
+            Text("MenuScreen")
+        }
+        .onFirstAppear {
+            viewStateProvider.fetchMenus()
+        }
     }
 }
 
