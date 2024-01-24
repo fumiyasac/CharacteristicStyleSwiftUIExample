@@ -20,7 +20,12 @@ public struct AnnouncementScreenView: View {
     // MARK: - Body
 
     public var body: some View {
-        Text("AnnouncementScreen")
+        Group {
+            Text("AnnouncementScreen")
+        }
+        .onFirstAppear {
+            viewStateProvider.fetchAnnouncements()
+        }
     }
 }
 
