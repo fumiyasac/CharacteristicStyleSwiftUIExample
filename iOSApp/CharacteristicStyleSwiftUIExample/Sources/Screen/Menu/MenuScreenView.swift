@@ -11,8 +11,6 @@ public struct MenuScreenView: View {
 
     // MARK: - Initializer
 
-    // MARK: - Initializer
-
     public init(viewStateProvider: MenuViewStateProvider = MenuViewStateProvider()) {
         self.viewStateProvider = viewStateProvider
     }
