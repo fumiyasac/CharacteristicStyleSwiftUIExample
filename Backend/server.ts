@@ -3,6 +3,7 @@ import jsonServer from 'json-server';
 const server = jsonServer.create();
 
 // Database構築用のJSONファイル
+// TODO:「Announcement / Gallery / Menu」それぞれの画面に表示するデータを作成する
 //const router = jsonServer.router('db/db.json');
 
 // 各種設定用
