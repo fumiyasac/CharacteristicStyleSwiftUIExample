@@ -1,6 +1,8 @@
 import Entity
 import Foundation
 
+// TODO: JWT関連部分の処理をどう扱うか？を決める（Mockサーバーでここまでするか？）
+
 // MARK: - Enum
 
 // MEMO: APIリクエストに関するEnum定義
