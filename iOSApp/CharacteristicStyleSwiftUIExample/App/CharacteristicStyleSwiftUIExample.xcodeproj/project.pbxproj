@@ -20,7 +20,6 @@
 		DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8902AEC0100006C617C /* Infrastructure */; };
 		DE48C8932AEFFC50006C617C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE48C8922AEFFC50006C617C /* AppDelegate.swift */; };
 		DE48C8972AF3EB85006C617C /* Components in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8962AF3EB85006C617C /* Components */; };
-		DE631A122B1A201C00D4B18E /* SwiftyUserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = DE631A112B1A201C00D4B18E /* SwiftyUserDefaults */; };
 		DE631A1A2B2C9D6500D4B18E /* Entity in Frameworks */ = {isa = PBXBuildFile; productRef = DE631A192B2C9D6500D4B18E /* Entity */; };
 		DE631A1C2B2C9D6A00D4B18E /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = DE631A1B2B2C9D6A00D4B18E /* Domain */; };
 		DE631A1E2B2E9C9400D4B18E /* ViewObject in Frameworks */ = {isa = PBXBuildFile; productRef = DE631A1D2B2E9C9400D4B18E /* ViewObject */; };
@@ -57,7 +56,6 @@
 				DE10175F2B0F8D0A007C33FD /* Extension in Frameworks */,
 				DE631A1C2B2C9D6A00D4B18E /* Domain in Frameworks */,
 				DE1261BE2B0F91AE0066066D /* NukeVideo in Frameworks */,
-				DE631A122B1A201C00D4B18E /* SwiftyUserDefaults in Frameworks */,
 				DE1261BC2B0F91AE0066066D /* NukeUI in Frameworks */,
 				DE1261B22B0F915F0066066D /* ConfettiSwiftUI in Frameworks */,
 				DE1261BA2B0F91AE0066066D /* NukeExtensions in Frameworks */,
@@ -139,7 +137,6 @@
 				DE1261B92B0F91AE0066066D /* NukeExtensions */,
 				DE1261BB2B0F91AE0066066D /* NukeUI */,
 				DE1261BD2B0F91AE0066066D /* NukeVideo */,
-				DE631A112B1A201C00D4B18E /* SwiftyUserDefaults */,
 				DE631A192B2C9D6500D4B18E /* Entity */,
 				DE631A1B2B2C9D6A00D4B18E /* Domain */,
 				DE631A1D2B2E9C9400D4B18E /* ViewObject */,
@@ -178,7 +175,6 @@
 				DE1261B02B0F915F0066066D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
 				DE1261B32B0F91900066066D /* XCRemoteSwiftPackageReference "Cosmos" */,
 				DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */,
-				DE631A102B1A201C00D4B18E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */,
 				DE1B57F42B53D2B3000E663C /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */,
 			);
 			productRefGroup = DE78BCF32AE61C690089AFD2 /* Products */;
@@ -446,14 +442,6 @@
 				minimumVersion = 1.4.0;
 			};
 		};
-		DE631A102B1A201C00D4B18E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sunshinejr/SwiftyUserDefaults.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.3.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -511,11 +499,6 @@
 		DE48C8962AF3EB85006C617C /* Components */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Components;
-		};
-		DE631A112B1A201C00D4B18E /* SwiftyUserDefaults */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE631A102B1A201C00D4B18E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */;
-			productName = SwiftyUserDefaults;
 		};
 		DE631A192B2C9D6500D4B18E /* Entity */ = {
 			isa = XCSwiftPackageProductDependency;
