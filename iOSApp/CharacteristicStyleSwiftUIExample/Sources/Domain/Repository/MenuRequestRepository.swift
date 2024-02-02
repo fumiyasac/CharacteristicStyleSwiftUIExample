@@ -24,5 +24,6 @@ public final class MenuRequestRepositoryImpl: MenuRequestRepository {
 
     public func getMenus() async throws -> [MenuEntity] {
         try await apiClientManager.getMenus().result
+        // TODO: Category毎にSortしてSectionにまとめておく必要がある
     }
 }
