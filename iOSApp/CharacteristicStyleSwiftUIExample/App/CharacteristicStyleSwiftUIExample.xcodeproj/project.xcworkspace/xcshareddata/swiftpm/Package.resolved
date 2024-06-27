@@ -1,24 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "collectionviewpaginglayout",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/amirdew/CollectionViewPagingLayout",
-      "state" : {
-        "revision" : "4bdec327535470c8d9765d190625b13e99b87db5",
-        "version" : "1.1.0"
-      }
-    },
-    {
-      "identity" : "confettiswiftui",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/simibac/ConfettiSwiftUI.git",
-      "state" : {
-        "revision" : "f45961f97bbae6fff6e2e64546fea0189425ad92",
-        "version" : "1.1.0"
-      }
-    },
-    {
       "identity" : "cosmos",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/evgenyneu/Cosmos.git",
@@ -32,17 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kean/Nuke.git",
       "state" : {
-        "revision" : "1694798e876113d44f6ec6ead965d7286695981d",
-        "version" : "12.2.0"
-      }
-    },
-    {
-      "identity" : "swiftui-shimmer",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/markiv/SwiftUI-Shimmer",
-      "state" : {
-        "revision" : "1f3a620e4abe890d00008cb2af7023d810b433a7",
-        "version" : "1.4.0"
+        "revision" : "311016d972aa751ae8ab0cd5897422ebe7db0501",
+        "version" : "12.7.3"
       }
     }
   ],

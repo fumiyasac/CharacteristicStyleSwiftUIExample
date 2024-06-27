@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		DE10175D2AFE7BA7007C33FD /* Screen in Frameworks */ = {isa = PBXBuildFile; productRef = DE10175C2AFE7BA7007C33FD /* Screen */; };
 		DE10175F2B0F8D0A007C33FD /* Extension in Frameworks */ = {isa = PBXBuildFile; productRef = DE10175E2B0F8D0A007C33FD /* Extension */; };
-		DE1261B22B0F915F0066066D /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B12B0F915F0066066D /* ConfettiSwiftUI */; };
 		DE1261B52B0F91900066066D /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B42B0F91900066066D /* Cosmos */; };
 		DE1261B82B0F91AE0066066D /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B72B0F91AE0066066D /* Nuke */; };
 		DE1261BA2B0F91AE0066066D /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B92B0F91AE0066066D /* NukeExtensions */; };
 		DE1261BC2B0F91AE0066066D /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261BB2B0F91AE0066066D /* NukeUI */; };
 		DE1261BE2B0F91AE0066066D /* NukeVideo in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261BD2B0F91AE0066066D /* NukeVideo */; };
-		DE1B57F62B53D2B3000E663C /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = DE1B57F52B53D2B3000E663C /* Shimmer */; };
 		DE1FF3BB2B458FB800B0BF22 /* ViewStateProvider in Frameworks */ = {isa = PBXBuildFile; productRef = DE1FF3BA2B458FB800B0BF22 /* ViewStateProvider */; };
 		DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8902AEC0100006C617C /* Infrastructure */; };
 		DE48C8932AEFFC50006C617C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE48C8922AEFFC50006C617C /* AppDelegate.swift */; };
@@ -43,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE1B57F62B53D2B3000E663C /* Shimmer in Frameworks */,
 				DE631A1A2B2C9D6500D4B18E /* Entity in Frameworks */,
 				DE1261B82B0F91AE0066066D /* Nuke in Frameworks */,
 				DE10175D2AFE7BA7007C33FD /* Screen in Frameworks */,
@@ -57,7 +54,6 @@
 				DE631A1C2B2C9D6A00D4B18E /* Domain in Frameworks */,
 				DE1261BE2B0F91AE0066066D /* NukeVideo in Frameworks */,
 				DE1261BC2B0F91AE0066066D /* NukeUI in Frameworks */,
-				DE1261B22B0F915F0066066D /* ConfettiSwiftUI in Frameworks */,
 				DE1261BA2B0F91AE0066066D /* NukeExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,7 +127,6 @@
 				DE48C8962AF3EB85006C617C /* Components */,
 				DE10175C2AFE7BA7007C33FD /* Screen */,
 				DE10175E2B0F8D0A007C33FD /* Extension */,
-				DE1261B12B0F915F0066066D /* ConfettiSwiftUI */,
 				DE1261B42B0F91900066066D /* Cosmos */,
 				DE1261B72B0F91AE0066066D /* Nuke */,
 				DE1261B92B0F91AE0066066D /* NukeExtensions */,
@@ -141,7 +136,6 @@
 				DE631A1B2B2C9D6A00D4B18E /* Domain */,
 				DE631A1D2B2E9C9400D4B18E /* ViewObject */,
 				DE1FF3BA2B458FB800B0BF22 /* ViewStateProvider */,
-				DE1B57F52B53D2B3000E663C /* Shimmer */,
 			);
 			productName = CharacteristicStyleSwiftUIExample;
 			productReference = DE78BCF22AE61C690089AFD2 /* CharacteristicStyleSwiftUIExample.app */;
@@ -172,10 +166,8 @@
 			);
 			mainGroup = DE78BCE92AE61C690089AFD2;
 			packageReferences = (
-				DE1261B02B0F915F0066066D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
 				DE1261B32B0F91900066066D /* XCRemoteSwiftPackageReference "Cosmos" */,
 				DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */,
-				DE1B57F42B53D2B3000E663C /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */,
 			);
 			productRefGroup = DE78BCF32AE61C690089AFD2 /* Products */;
 			projectDirPath = "";
@@ -410,14 +402,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DE1261B02B0F915F0066066D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
-			};
-		};
 		DE1261B32B0F91900066066D /* XCRemoteSwiftPackageReference "Cosmos" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
@@ -431,15 +415,7 @@
 			repositoryURL = "https://github.com/kean/Nuke.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 12.1.6;
-			};
-		};
-		DE1B57F42B53D2B3000E663C /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/markiv/SwiftUI-Shimmer";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.4.0;
+				minimumVersion = 12.7.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -452,11 +428,6 @@
 		DE10175E2B0F8D0A007C33FD /* Extension */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Extension;
-		};
-		DE1261B12B0F915F0066066D /* ConfettiSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE1261B02B0F915F0066066D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
-			productName = ConfettiSwiftUI;
 		};
 		DE1261B42B0F91900066066D /* Cosmos */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -482,11 +453,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = NukeVideo;
-		};
-		DE1B57F52B53D2B3000E663C /* Shimmer */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE1B57F42B53D2B3000E663C /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */;
-			productName = Shimmer;
 		};
 		DE1FF3BA2B458FB800B0BF22 /* ViewStateProvider */ = {
 			isa = XCSwiftPackageProductDependency;

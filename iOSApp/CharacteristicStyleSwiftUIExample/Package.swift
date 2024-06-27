@@ -19,9 +19,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/evgenyneu/Cosmos", branch: "master"),
-        .package(url: "https://github.com/kean/Nuke", from: "12.1.6"),
-        .package(url: "https://github.com/amirdew/CollectionViewPagingLayout", from: "1.1.0"),
-        .package(url: "https://github.com/simibac/ConfettiSwiftUI.git", from: "1.1.0")
+        .package(url: "https://github.com/kean/Nuke", from: "12.7.3")
     ],
     targets: [
         .target(
@@ -34,9 +32,7 @@ let package = Package(
         .target(
             name: "Components",
             dependencies: [
-                .product(name: "Cosmos", package: "Cosmos"),
-                .product(name: "CollectionViewPagingLayout", package: "CollectionViewPagingLayout"),
-                .product(name: "ConfettiSwiftUI", package: "ConfettiSwiftUI")
+                .product(name: "Cosmos", package: "Cosmos")
             ]
         ),
         .target(
