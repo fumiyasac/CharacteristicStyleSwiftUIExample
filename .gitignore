@@ -13,3 +13,7 @@ Backend/node_modules
 
 # Docker
 Docker/.env
+
+# Prisma
+Prisma/node_modules
+Prisma/.env
