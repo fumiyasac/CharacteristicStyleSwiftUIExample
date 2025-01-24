@@ -46,7 +46,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
             NSAttributedString.Key.foregroundColor : UIColor.lightGray
         ]
         tabBarItemAppearance.selected.titleTextAttributes = [
-            NSAttributedString.Key.foregroundColor : UIColor(code: "##f3b664")
+            NSAttributedString.Key.foregroundColor : UIColor(code: "#f3b664")
         ]
         tabBarAppearance.stackedLayoutAppearance = tabBarItemAppearance
         UITabBar.appearance().standardAppearance = tabBarAppearance
