@@ -10,3 +10,6 @@ DerivedData/
 
 # Backend
 Backend/node_modules
+
+# Docker
+Docker/.env
