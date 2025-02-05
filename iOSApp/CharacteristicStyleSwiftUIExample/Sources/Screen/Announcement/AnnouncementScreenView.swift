@@ -20,11 +20,15 @@ public struct AnnouncementScreenView: View {
     // MARK: - Body
 
     public var body: some View {
-        Group {
-            Text("AnnouncementScreen")
-        }
-        .onFirstAppear {
-            viewStateProvider.fetchAnnouncements()
+        NavigationStack {
+            Group {
+                Text("AnnouncementScreen")
+            }
+            .onFirstAppear {
+                viewStateProvider.fetchAnnouncements()
+            }
+            .navigationTitle("🚩お知らせ画面")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

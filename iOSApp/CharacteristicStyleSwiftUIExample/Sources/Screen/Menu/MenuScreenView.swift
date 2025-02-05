@@ -18,11 +18,15 @@ public struct MenuScreenView: View {
     // MARK: - Body
     
     public var body: some View {
-        Group {
-            Text("MenuScreen")
-        }
-        .onFirstAppear {
-            viewStateProvider.fetchMenus()
+        NavigationStack {
+            Group {
+                Text("MenuScreen")
+            }
+            .onFirstAppear {
+                viewStateProvider.fetchMenus()
+            }
+            .navigationTitle("🍙メニュー画面")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

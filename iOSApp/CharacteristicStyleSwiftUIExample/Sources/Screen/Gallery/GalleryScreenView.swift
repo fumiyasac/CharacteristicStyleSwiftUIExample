@@ -18,11 +18,15 @@ public struct GalleryScreenView: View {
     // MARK: - Body
 
     public var body: some View {
-        Group {
-            Text("GalleryScreen")
-        }
-        .onFirstAppear {
-            viewStateProvider.fetchGalleries()
+        NavigationStack {
+            Group {
+                Text("GalleryScreen")
+            }
+            .onFirstAppear {
+                viewStateProvider.fetchGalleries()
+            }
+            .navigationTitle("🎨ギャラリー画面")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
