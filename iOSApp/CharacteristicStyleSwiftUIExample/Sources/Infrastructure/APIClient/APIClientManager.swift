@@ -50,14 +50,16 @@ public final class ApiClientManager {
         case menus
 
         func getBaseUrl() -> String {
-            return [host, self.rawValue].joined(separator: "/")
+            return [mockServerHost, self.rawValue].joined(separator: "/")
         }
     }
 
     // MARK: - Properties
 
     // MEMO: API ServerへのURLに関する情報
-    private static let host = "http://localhost:3001"
+    private static let mockServerHost = "http://localhost:3001"
+    // TODO: Prisma + Express.jsで構築したサーバーURLに関する情報
+    private static let prismaServerHost = "http://localhost:3000"
 
     // MARK: - Function
 
