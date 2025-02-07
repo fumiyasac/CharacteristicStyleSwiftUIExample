@@ -3,20 +3,16 @@ import jsonServer from 'json-server';
 const server = jsonServer.create();
 
 // Database構築用のJSONファイル
-// TODO:「Announcement / Gallery / Menu」それぞれの画面に表示するデータを作成する
-//const router = jsonServer.router('db/db.json');
+const router = jsonServer.router('db/db.json');
 
 // 各種設定用
 const middlewares = jsonServer.defaults();
-// リライトルールを設定する
-//const rewrite_rules = jsonServer.rewriter();
-//server.use(rewrite_rules);
 
 // ミドルウェアを設定する (※コンソール出力するロガーやキャッシュの設定等)
 server.use(middlewares);
 
 // ルーティングを設定する
-//server.use(router);
+server.use(router);
 
 // サーバをポート3000で起動する
 server.listen(3000, () => {

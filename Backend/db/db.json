@@ -1,3 +1,62 @@
 {
-  
+  "galleries": {
+    "result": [
+      {
+        "id": 1,
+        "title": "豚生姜焼き定食A",
+        "subtitle": "こちらは豚生姜焼き定食（900円）になります。",
+        "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/gallery/gallery_example1.png",
+        "published_at": "2025/02/08"
+      },
+      {
+        "id": 2,
+        "title": "ハンバーグステーキ定食A",
+        "subtitle": "こちらはハンバーグステーキ定食（900円）になります。",
+        "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/gallery/gallery_example2.png",
+        "published_at": "2025/02/08"
+      },
+      {
+        "id": 3,
+        "title": "若鶏の唐揚げ定食A",
+        "subtitle": "こちらは若鶏の唐揚げ定食（900円）になります。",
+        "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/gallery/gallery_example3.png",
+        "published_at": "2025/02/08"
+      },
+      {
+        "id": 4,
+        "title": "本日の焼き魚定食A",
+        "subtitle": "こちらは本日の焼き魚定食（900円）になります。",
+        "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/gallery/gallery_example4.png",
+        "published_at": "2025/02/08"
+      },
+      {
+        "id": 5,
+        "title": "カキフライ定食B",
+        "subtitle": "こちらはカキフライ定食（900円）になります。",
+        "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/gallery/gallery_example5.png",
+        "published_at": "2025/02/08"
+      },
+      {
+        "id": 6,
+        "title": "エビフライ定食B",
+        "subtitle": "こちらはエビフライ定食（900円）になります。",
+        "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/gallery/gallery_example6.png",
+        "published_at": "2025/02/08"
+      },
+      {
+        "id": 7,
+        "title": "とんかつ定食B",
+        "subtitle": "こちらはとんかつ定食（900円）になります。",
+        "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/gallery/gallery_example7.png",
+        "published_at": "2025/02/08"
+      },
+      {
+        "id": 8,
+        "title": "本日のお刺身定食B",
+        "subtitle": "こちらは本日のお刺身定食（900円）になります。",
+        "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/gallery/gallery_example8.png",
+        "published_at": "2025/02/08"
+      }
+    ] 
+  }
 }
