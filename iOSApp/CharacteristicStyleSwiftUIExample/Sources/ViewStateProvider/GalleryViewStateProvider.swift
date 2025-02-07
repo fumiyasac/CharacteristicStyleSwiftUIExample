@@ -11,10 +11,10 @@ public final class GalleryViewStateProvider {
     
     private let galleryRequestRepository: GalleryRequestRepository
 
-    private var requestStatus: APIRequestState = .none
+    public var requestStatus: APIRequestState = .none
 
     // MEMO: 一覧表示に関係するProperty（●●●ViewObjectsの様な命名をしている）
-    private(set) var galleryViewObjects: [GalleryViewObject] = []
+    public var galleryViewObjects: [GalleryViewObject] = []
 
     // MARK: - Initializer
 

@@ -57,7 +57,7 @@ public final class ApiClientManager {
     // MARK: - Properties
 
     // MEMO: API ServerへのURLに関する情報
-    private static let mockServerHost = "http://localhost:3001"
+    private static let mockServerHost = "http://localhost:3000"
     // TODO: Prisma + Express.jsで構築したサーバーURLに関する情報
     private static let prismaServerHost = "http://localhost:3000"
 
@@ -196,12 +196,11 @@ extension ApiClientManager: APIClientManagerProtocol {
     }
 
     public func getGalleries() async throws -> GalleriesAPIResponse {
-        let result = try await executeAPIRequest(
+        return try await executeAPIRequest(
             endpointUrl: EndPoint.galleries.getBaseUrl(),
             httpMethod: HTTPMethod.GET,
-            responseFormat: [GalleryEntity].self
+            responseFormat: GalleriesAPIResponse.self
         )
-        return GalleriesAPIResponse(result: result)
     }
 
     public func getMenus() async throws -> MenusAPIResponse {
