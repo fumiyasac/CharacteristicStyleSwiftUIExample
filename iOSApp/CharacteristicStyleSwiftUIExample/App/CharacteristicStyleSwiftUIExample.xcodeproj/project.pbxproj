@@ -11,9 +11,7 @@
 		DE10175F2B0F8D0A007C33FD /* Extension in Frameworks */ = {isa = PBXBuildFile; productRef = DE10175E2B0F8D0A007C33FD /* Extension */; };
 		DE1261B52B0F91900066066D /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B42B0F91900066066D /* Cosmos */; };
 		DE1261B82B0F91AE0066066D /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B72B0F91AE0066066D /* Nuke */; };
-		DE1261BA2B0F91AE0066066D /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B92B0F91AE0066066D /* NukeExtensions */; };
 		DE1261BC2B0F91AE0066066D /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261BB2B0F91AE0066066D /* NukeUI */; };
-		DE1261BE2B0F91AE0066066D /* NukeVideo in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261BD2B0F91AE0066066D /* NukeVideo */; };
 		DE1FF3BB2B458FB800B0BF22 /* ViewStateProvider in Frameworks */ = {isa = PBXBuildFile; productRef = DE1FF3BA2B458FB800B0BF22 /* ViewStateProvider */; };
 		DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8902AEC0100006C617C /* Infrastructure */; };
 		DE48C8932AEFFC50006C617C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE48C8922AEFFC50006C617C /* AppDelegate.swift */; };
@@ -52,9 +50,7 @@
 				DE1FF3BB2B458FB800B0BF22 /* ViewStateProvider in Frameworks */,
 				DE10175F2B0F8D0A007C33FD /* Extension in Frameworks */,
 				DE631A1C2B2C9D6A00D4B18E /* Domain in Frameworks */,
-				DE1261BE2B0F91AE0066066D /* NukeVideo in Frameworks */,
 				DE1261BC2B0F91AE0066066D /* NukeUI in Frameworks */,
-				DE1261BA2B0F91AE0066066D /* NukeExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,9 +125,7 @@
 				DE10175E2B0F8D0A007C33FD /* Extension */,
 				DE1261B42B0F91900066066D /* Cosmos */,
 				DE1261B72B0F91AE0066066D /* Nuke */,
-				DE1261B92B0F91AE0066066D /* NukeExtensions */,
 				DE1261BB2B0F91AE0066066D /* NukeUI */,
-				DE1261BD2B0F91AE0066066D /* NukeVideo */,
 				DE631A192B2C9D6500D4B18E /* Entity */,
 				DE631A1B2B2C9D6A00D4B18E /* Domain */,
 				DE631A1D2B2E9C9400D4B18E /* ViewObject */,
@@ -439,20 +433,10 @@
 			package = DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = Nuke;
 		};
-		DE1261B92B0F91AE0066066D /* NukeExtensions */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */;
-			productName = NukeExtensions;
-		};
 		DE1261BB2B0F91AE0066066D /* NukeUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = NukeUI;
-		};
-		DE1261BD2B0F91AE0066066D /* NukeVideo */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */;
-			productName = NukeVideo;
 		};
 		DE1FF3BA2B458FB800B0BF22 /* ViewStateProvider */ = {
 			isa = XCSwiftPackageProductDependency;

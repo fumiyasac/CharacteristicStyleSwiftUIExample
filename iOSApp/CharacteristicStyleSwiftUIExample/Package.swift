@@ -19,7 +19,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/evgenyneu/Cosmos", branch: "master"),
-        .package(url: "https://github.com/kean/Nuke", from: "12.7.3")
+        .package(url: "https://github.com/kean/Nuke", from: "12.8.0")
     ],
     targets: [
         .target(
