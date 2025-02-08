@@ -10,13 +10,24 @@ import ViewObject
 
 struct GallerySelectedImageView: View {
 
-    @Binding var selectedImage: Image?
+    // MARK: - Property (Display Animation)
+
+    // 選択された画面切り替え対象のViewObjectと連動する
     @Binding var selectedViewObject: GalleryViewObject?
+
+    // 選択された画面切り替え対象のImage要素と連動する
+    @Binding var selectedImage: Image?
+
+    // .matchedGeometryEffectで利用する名前空間
     let namespace: Namespace.ID
 
-    public var body: some View {
+    // MARK: - Body
+
+    var body: some View {
         VStack {
             if let id = selectedViewObject?.id, let cachedSelectedImage = selectedImage {
+
+                // 拡大画像が存在する場合は比率を維持した状態で横幅いっぱいに表示する
                 cachedSelectedImage
                     .resizable()
                     .scaledToFit()
@@ -29,6 +40,8 @@ struct GallerySelectedImageView: View {
                     }
 
             } else {
+
+                // 拡大画像が存在しない場合は白色背景を表示する
                 Color(.white)
             }
         }
