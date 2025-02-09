@@ -21,6 +21,11 @@ struct GallerySelectedImageView: View {
     // .matchedGeometryEffectで利用する名前空間
     let namespace: Namespace.ID
 
+    // MARK: - Property (DragGesture Translation)
+
+    // DragGestureでの変化量を格納する
+    @State private var position = CGSize.zero
+
     // MARK: - Body
 
     var body: some View {
@@ -31,13 +36,32 @@ struct GallerySelectedImageView: View {
                 cachedSelectedImage
                     .resizable()
                     .scaledToFit()
-                    .matchedGeometryEffect(id: "gallery-\(id)", in: namespace)
+                    .matchedGeometryEffect(id: "gallery-\(id)", in: namespace, isSource: selectedImage != nil)
                     .onTapGesture {
                         withAnimation(.spring(response: 0.36, dampingFraction: 0.48)) {
                             selectedImage = nil
                             selectedViewObject = nil
                         }
                     }
+                    // DragGestureでの変化量と要素が追従する様にoffset値を更新する
+                    .offset(position)
+                    // DragGestureを実行し、①移動中は変化量を変数に格納する、②終了時は高さの閾値を見て超過する場合は表示を元に戻す、の2つを実行する
+                    .gesture(
+                        DragGesture()
+                            .onChanged { value in
+                                position = value.translation
+                            }
+                            .onEnded { _ in
+                                withAnimation(.spring(response: 0.36, dampingFraction: 0.48)) {
+                                    if 200.0 < abs(position.height) {
+                                        selectedImage = nil
+                                        selectedViewObject = nil
+                                    } else {
+                                        position = .zero
+                                    }
+                                }
+                            }
+                    )
 
             } else {
 
