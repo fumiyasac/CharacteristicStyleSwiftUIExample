@@ -26,7 +26,6 @@ public struct GalleryScreenView: View {
     // .matchedGeometryEffectで利用する名前空間
     @Namespace private var namespace
 
-
     // MARK: - Initializer
 
     public init(viewStateProvider: GalleryViewStateProvider = GalleryViewStateProvider()) {
