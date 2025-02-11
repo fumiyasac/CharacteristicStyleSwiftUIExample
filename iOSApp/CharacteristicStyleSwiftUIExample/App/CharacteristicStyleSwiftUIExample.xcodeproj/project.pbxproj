@@ -10,7 +10,6 @@
 		DE10175D2AFE7BA7007C33FD /* Screen in Frameworks */ = {isa = PBXBuildFile; productRef = DE10175C2AFE7BA7007C33FD /* Screen */; };
 		DE10175F2B0F8D0A007C33FD /* Extension in Frameworks */ = {isa = PBXBuildFile; productRef = DE10175E2B0F8D0A007C33FD /* Extension */; };
 		DE1261B52B0F91900066066D /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B42B0F91900066066D /* Cosmos */; };
-		DE1261B82B0F91AE0066066D /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261B72B0F91AE0066066D /* Nuke */; };
 		DE1261BC2B0F91AE0066066D /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE1261BB2B0F91AE0066066D /* NukeUI */; };
 		DE1FF3BB2B458FB800B0BF22 /* ViewStateProvider in Frameworks */ = {isa = PBXBuildFile; productRef = DE1FF3BA2B458FB800B0BF22 /* ViewStateProvider */; };
 		DE48C8912AEC0100006C617C /* Infrastructure in Frameworks */ = {isa = PBXBuildFile; productRef = DE48C8902AEC0100006C617C /* Infrastructure */; };
@@ -40,7 +39,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE631A1A2B2C9D6500D4B18E /* Entity in Frameworks */,
-				DE1261B82B0F91AE0066066D /* Nuke in Frameworks */,
 				DE10175D2AFE7BA7007C33FD /* Screen in Frameworks */,
 				DE48C8972AF3EB85006C617C /* Components in Frameworks */,
 				DE1261B52B0F91900066066D /* Cosmos in Frameworks */,
@@ -124,7 +122,6 @@
 				DE10175C2AFE7BA7007C33FD /* Screen */,
 				DE10175E2B0F8D0A007C33FD /* Extension */,
 				DE1261B42B0F91900066066D /* Cosmos */,
-				DE1261B72B0F91AE0066066D /* Nuke */,
 				DE1261BB2B0F91AE0066066D /* NukeUI */,
 				DE631A192B2C9D6500D4B18E /* Entity */,
 				DE631A1B2B2C9D6A00D4B18E /* Domain */,
@@ -427,11 +424,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE1261B32B0F91900066066D /* XCRemoteSwiftPackageReference "Cosmos" */;
 			productName = Cosmos;
-		};
-		DE1261B72B0F91AE0066066D /* Nuke */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE1261B62B0F91AE0066066D /* XCRemoteSwiftPackageReference "Nuke" */;
-			productName = Nuke;
 		};
 		DE1261BB2B0F91AE0066066D /* NukeUI */ = {
 			isa = XCSwiftPackageProductDependency;

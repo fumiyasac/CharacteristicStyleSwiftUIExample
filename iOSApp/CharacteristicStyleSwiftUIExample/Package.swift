@@ -57,6 +57,7 @@ let package = Package(
                 "Extension",
                 "ViewObject",
                 "ViewStateProvider",
+                "Nuke",
             ]
         ),
         .target(
