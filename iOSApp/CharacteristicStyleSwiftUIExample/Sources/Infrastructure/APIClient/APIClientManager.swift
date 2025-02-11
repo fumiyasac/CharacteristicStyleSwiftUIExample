@@ -204,11 +204,10 @@ extension ApiClientManager: APIClientManagerProtocol {
     }
 
     public func getMenus() async throws -> MenusAPIResponse {
-        let result = try await executeAPIRequest(
+        return try await executeAPIRequest(
             endpointUrl: EndPoint.menus.getBaseUrl(),
             httpMethod: HTTPMethod.GET,
-            responseFormat: [MenuEntity].self
+            responseFormat: MenusAPIResponse.self
         )
-        return MenusAPIResponse(result: result)
     }
 }

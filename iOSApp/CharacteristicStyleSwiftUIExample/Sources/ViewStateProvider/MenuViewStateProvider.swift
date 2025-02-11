@@ -34,13 +34,11 @@ public final class MenuViewStateProvider {
                     MenuViewObject(
                         id: $0.id,
                         name: $0.name,
-                        catchCopy: $0.catchCopy,
-                        summary: $0.summary,
-                        foodCategory: $0.foodCategory,
+                        notice: $0.notice,
+                        category: $0.category,
                         price: $0.price,
-                        rate: $0.rate,
-                        thumbnailUrl: $0.thumbnailUrl,
-                        publishedAt: $0.publishedAt
+                        unit: $0.unit,
+                        rate: $0.rate
                     )
                 }
                 self.requestStatus = .success

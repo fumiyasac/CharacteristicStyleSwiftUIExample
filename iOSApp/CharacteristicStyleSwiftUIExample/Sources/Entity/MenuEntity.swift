@@ -6,26 +6,56 @@ public struct MenuEntity: Hashable, Decodable {
 
     public let id: Int
     public let name: String
-    public let catchCopy: String
-    public let summary: String
-    public let foodCategory: String
+    public let notice: String
+    public let category: MenuEntity.FoodMenuCategeory
     public let price: Int
+    public let unit: String
     public let rate: Double
-    public let thumbnailUrl: String
-    public let publishedAt: String
 
-    // MARK: - Enum
+    // MARK: - Enum (Menu Category)
+
+    public enum FoodMenuCategeory: String, CaseIterable {
+
+        case washoku
+        case yoshoku
+        case chinese
+        case fried
+        case otsumami
+        case keishoku
+        case seafood
+        case wagashi
+        case bread
+
+        public var title: String {
+            switch self {
+            case .washoku: return "和食"
+            case .yoshoku: return "洋食"
+            case .chinese: return "中華"
+            case .fried: return "揚げ物"
+            case .otsumami: return "おつまみ"
+            case .keishoku: return "軽食"
+            case .seafood: return "海鮮"
+            case .wagashi: return "和菓子"
+            case .bread: return "パン"
+            }
+        }
+
+        // Viewに配置したTab要素を識別するための文字列
+        public var tabID: String {
+            return self.rawValue
+        }
+    }
+    
+    // MARK: - Enum (Decoder)
 
     private enum Keys: String, CodingKey {
         case id
         case name
-        case catchCopy = "category_copy"
-        case summary
-        case foodCategory = "food_category"
+        case notice
+        case category
         case price
+        case unit
         case rate
-        case thumbnailUrl = "thumbnail_url"
-        case publishedAt = "published_at"
     }
 
     // MARK: - Initializer
@@ -38,13 +68,11 @@ public struct MenuEntity: Hashable, Decodable {
         // JSONの配列内の要素にある値をDecodeして初期化する
         self.id = try container.decode(Int.self, forKey: .id)
         self.name = try container.decode(String.self, forKey: .name)
-        self.catchCopy = try container.decode(String.self, forKey: .catchCopy)
-        self.summary = try container.decode(String.self, forKey: .summary)
-        self.foodCategory = try container.decode(String.self, forKey: .foodCategory)
+        self.notice = try container.decode(String.self, forKey: .notice)
+        self.category = MenuEntity.FoodMenuCategeory(rawValue: try container.decode(String.self, forKey: .category)) ?? .washoku
         self.price = try container.decode(Int.self, forKey: .price)
+        self.unit = try container.decode(String.self, forKey: .unit)
         self.rate = try container.decode(Double.self, forKey: .rate)
-        self.thumbnailUrl = try container.decode(String.self, forKey: .thumbnailUrl)
-        self.publishedAt = try container.decode(String.self, forKey: .publishedAt)
     }
 
     // MARK: - Hashable

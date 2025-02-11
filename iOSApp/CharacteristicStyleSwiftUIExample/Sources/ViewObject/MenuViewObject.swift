@@ -1,3 +1,4 @@
+import Entity
 import Foundation
 
 public struct MenuViewObject {
@@ -6,35 +7,29 @@ public struct MenuViewObject {
 
     public let id: Int
     public let name: String
-    public let catchCopy: String
-    public let summary: String
-    public let foodCategory: String
+    public let notice: String
+    public let category: MenuEntity.FoodMenuCategeory
     public let price: Int
+    public let unit: String
     public let rate: Double
-    public let thumbnailUrl: URL?
-    public let publishedAt: String
 
     // MARK: - Initializer
 
     public init(
         id: Int,
         name: String,
-        catchCopy: String,
-        summary: String,
-        foodCategory: String,
+        notice: String,
+        category: MenuEntity.FoodMenuCategeory,
         price: Int,
-        rate: Double,
-        thumbnailUrl: String,
-        publishedAt: String
+        unit: String,
+        rate: Double
     ) {
         self.id = id
         self.name = name
-        self.catchCopy = catchCopy
-        self.summary = summary
-        self.foodCategory = foodCategory
+        self.notice = notice
+        self.category = category
         self.price = price
+        self.unit = unit
         self.rate = rate
-        self.thumbnailUrl = URL(string: thumbnailUrl) ?? nil
-        self.publishedAt = publishedAt
     }
 }
