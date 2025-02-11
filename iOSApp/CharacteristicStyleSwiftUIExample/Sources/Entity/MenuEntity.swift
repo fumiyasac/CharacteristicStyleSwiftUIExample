@@ -40,6 +40,20 @@ public struct MenuEntity: Hashable, Decodable {
             }
         }
 
+        public var eyecatchUrl: String {
+            switch self {
+            case .washoku: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_washoku.png"
+            case .yoshoku: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_yoshioku.png"
+            case .chinese: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_chinese.png"
+            case .fried: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_fried.png"
+            case .otsumami: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_otsumami.png"
+            case .keishoku: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_keishoku.png"
+            case .seafood: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_seafood.png"
+            case .wagashi: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_wagashi.png"
+            case .bread: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_bread.png"
+            }
+        }
+
         // Viewに配置したTab要素を識別するための文字列
         public var tabID: String {
             return self.rawValue
