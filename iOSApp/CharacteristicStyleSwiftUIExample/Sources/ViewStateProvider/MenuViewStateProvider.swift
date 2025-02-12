@@ -1,4 +1,5 @@
 import Domain
+import Entity
 import Foundation
 import Infrastructure
 import Observation
@@ -14,7 +15,7 @@ public final class MenuViewStateProvider {
     private var requestStatus: APIRequestState = .none
 
     // MEMO: 一覧表示に関係するProperty（●●●ViewObjectsの様な命名をしている）
-    private(set) var menuViewObjects: [MenuViewObject] = []
+    private(set) var groupedMenuViewObjects: [[MenuViewObject]] = []
 
     // MARK: - Initializer
 
@@ -30,7 +31,7 @@ public final class MenuViewStateProvider {
             do {
                 // MEMO: async/awaitベースの処理で必要な値を取得し、その後`private(set)`で定義した値を更新する
                 let menuEntities = try await self.menuRequestRepository.getMenus()
-                self.menuViewObjects = menuEntities.map {
+                let menuViewObjects = menuEntities.map {
                     MenuViewObject(
                         id: $0.id,
                         name: $0.name,
@@ -40,6 +41,10 @@ public final class MenuViewStateProvider {
                         unit: $0.unit,
                         rate: $0.rate
                     )
+                }
+                for category in MenuEntity.FoodMenuCategeory.allCases {
+                    let foodMenus = menuViewObjects.filter { $0.category == category }
+                    groupedMenuViewObjects.append(foodMenus)
                 }
                 self.requestStatus = .success
             } catch let error {
