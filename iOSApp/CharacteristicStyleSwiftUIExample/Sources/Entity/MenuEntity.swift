@@ -19,24 +19,16 @@ public struct MenuEntity: Hashable, Decodable {
         case washoku
         case yoshoku
         case chinese
-        case fried
         case otsumami
-        case keishoku
-        case seafood
         case wagashi
-        case bread
 
         public var title: String {
             switch self {
-            case .washoku: return "和食"
-            case .yoshoku: return "洋食"
-            case .chinese: return "中華"
-            case .fried: return "揚げ物"
-            case .otsumami: return "おつまみ"
-            case .keishoku: return "軽食"
-            case .seafood: return "海鮮"
-            case .wagashi: return "和菓子"
-            case .bread: return "パン"
+            case .washoku: return "🍲和食・丼物・寿司"
+            case .yoshoku: return "🍳洋食・揚げ物・グリル"
+            case .chinese: return "🥟中華料理・点心"
+            case .otsumami: return "🫛おつまみ・一品料理"
+            case .wagashi: return "🧇和菓子・デザート"
             }
         }
 
@@ -45,12 +37,8 @@ public struct MenuEntity: Hashable, Decodable {
             case .washoku: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_washoku.png"
             case .yoshoku: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_yoshioku.png"
             case .chinese: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_chinese.png"
-            case .fried: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_fried.png"
             case .otsumami: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_otsumami.png"
-            case .keishoku: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_keishoku.png"
-            case .seafood: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_seafood.png"
             case .wagashi: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_wagashi.png"
-            case .bread: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_bread.png"
             }
         }
 
