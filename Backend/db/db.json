@@ -58,5 +58,639 @@
         "published_at": "2025/02/08"
       }
     ] 
+  },
+  "menus": {
+    "result": [
+      {
+        "id": 1,
+        "name": "親子丼",
+        "notice": "味噌汁・お新香付き",
+        "category": "washoku",
+        "price": 900,
+        "unit": "1人前",
+        "rate": 4.37
+      },
+      {
+        "id": 2,
+        "name": "ロースカツ丼",
+        "notice": "味噌汁・お新香付き",
+        "category": "washoku",
+        "price": 1000,
+        "unit": "1人前",
+        "rate": 4.45
+      },
+      {
+        "id": 3,
+        "name": "牛丼",
+        "notice": "味噌汁・お新香付き",
+        "category": "washoku",
+        "price": 900,
+        "unit": "1人前",
+        "rate": 4.23
+      },
+      {
+        "id": 4,
+        "name": "天丼",
+        "notice": "味噌汁・お新香付き",
+        "category": "washoku",
+        "price": 1200,
+        "unit": "1人前",
+        "rate": 4.50
+      },
+      {
+        "id": 5,
+        "name": "天丼",
+        "notice": "味噌汁・お新香付き",
+        "category": "washoku",
+        "price": 1200,
+        "unit": "1人前",
+        "rate": 4.50
+      },
+      {
+        "id": 5,
+        "name": "海鮮丼",
+        "notice": "味噌汁・お新香付き",
+        "category": "washoku",
+        "price": 1600,
+        "unit": "1人前",
+        "rate": 4.45
+      },
+      {
+        "id": 6,
+        "name": "握り寿司",
+        "notice": "お吸い物付き",
+        "category": "washoku",
+        "price": 1500,
+        "unit": "1人前（10貫）",
+        "rate": 4.45
+      },
+      {
+        "id": 7,
+        "name": "すき焼き",
+        "notice": "生卵2個付き",
+        "category": "washoku",
+        "price": 3500,
+        "unit": "2人前",
+        "rate": 4.15
+      },
+      {
+        "id": 8,
+        "name": "天ぷら盛り合わせ",
+        "notice": "なす・しいたけ・大葉・かぼちゃ・海老2本",
+        "category": "washoku",
+        "price": 1000,
+        "unit": "1人前",
+        "rate": 4.27
+      },
+      {
+        "id": 9,
+        "name": "お刺身盛り合わせ",
+        "notice": "サーモン・たこ・いか・まぐろ・えび・はまち・本日の鮮魚",
+        "category": "washoku",
+        "price": 4000,
+        "unit": "3人前",
+        "rate": 4.36
+      },
+      {
+        "id": 11,
+        "name": "鰻丼",
+        "notice": "味噌汁・お新香付き",
+        "category": "washoku",
+        "price": 1600,
+        "unit": "1人前",
+        "rate": 4.17
+      },
+      {
+        "id": 12,
+        "name": "五目炊き込みご飯",
+        "notice": "単品",
+        "category": "washoku",
+        "price": 350,
+        "unit": "1人前",
+        "rate": 4.22
+      },
+      {
+        "id": 13,
+        "name": "栗ご飯",
+        "notice": "単品",
+        "category": "washoku",
+        "price": 300,
+        "unit": "1人前",
+        "rate": 4.14
+      },
+      {
+        "id": 14,
+        "name": "お赤飯",
+        "notice": "単品",
+        "category": "washoku",
+        "price": 300,
+        "unit": "1人前",
+        "rate": 4.11
+      },
+      {
+        "id": 15,
+        "name": "たぬきそば",
+        "notice": "単品",
+        "category": "washoku",
+        "price": 400,
+        "unit": "1人前",
+        "rate": 4.35
+      },
+      {
+        "id": 16,
+        "name": "きつねうどん",
+        "notice": "単品",
+        "category": "washoku",
+        "price": 400,
+        "unit": "1人前",
+        "rate": 4.40
+      },
+      {
+        "id": 17,
+        "name": "カツカレー",
+        "notice": "単品",
+        "category": "yoshoku",
+        "price": 1200,
+        "unit": "1人前",
+        "rate": 4.40
+      },
+      {
+        "id": 18,
+        "name": "ビーフカレー",
+        "notice": "単品",
+        "category": "yoshoku",
+        "price": 850,
+        "unit": "1人前",
+        "rate": 4.24
+      },
+      {
+        "id": 19,
+        "name": "トマトソーススパゲッティ",
+        "notice": "単品",
+        "category": "yoshoku",
+        "price": 750,
+        "unit": "1人前",
+        "rate": 4.31
+      },
+      {
+        "id": 20,
+        "name": "ペペロンチーノ",
+        "notice": "単品",
+        "category": "yoshoku",
+        "price": 700,
+        "unit": "1人前",
+        "rate": 4.56
+      },
+      {
+        "id": 21,
+        "name": "ビーフシチュー",
+        "notice": "フランスパン3切れ付き",
+        "category": "yoshoku",
+        "price": 1500,
+        "unit": "1人前",
+        "rate": 4.37
+      },
+      {
+        "id": 22,
+        "name": "クリームシチュー",
+        "notice": "フランスパン3切れ付き",
+        "category": "yoshoku",
+        "price": 1500,
+        "unit": "1人前",
+        "rate": 4.37
+      },
+      {
+        "id": 22,
+        "name": "クリームシチュー",
+        "notice": "フランスパン2切れ付き",
+        "category": "yoshoku",
+        "price": 1200,
+        "unit": "1人前",
+        "rate": 4.21
+      },
+      {
+        "id": 23,
+        "name": "カルボナーラスパゲッティ",
+        "notice": "単品",
+        "category": "yoshoku",
+        "price": 900,
+        "unit": "1人前",
+        "rate": 4.43
+      },
+      {
+        "id": 24,
+        "name": "ミートソーススパゲッティ",
+        "notice": "単品",
+        "category": "yoshoku",
+        "price": 900,
+        "unit": "1人前",
+        "rate": 4.52
+      },
+      {
+        "id": 25,
+        "name": "マカロニグラタン",
+        "notice": "単品",
+        "category": "yoshoku",
+        "price": 800,
+        "unit": "1人前",
+        "rate": 4.24
+      },
+      {
+        "id": 26,
+        "name": "カキフライ",
+        "notice": "ライス・スープ付き",
+        "category": "yoshoku",
+        "price": 1000,
+        "unit": "1人前",
+        "rate": 4.24
+      },
+      {
+        "id": 27,
+        "name": "ロールキャベツ",
+        "notice": "ライス・スープ付き",
+        "category": "yoshoku",
+        "price": 1000,
+        "unit": "1人前",
+        "rate": 4.22
+      },
+      {
+        "id": 27,
+        "name": "冷製ローストビーフ",
+        "notice": "単品",
+        "category": "yoshoku",
+        "price": 1200,
+        "unit": "6枚",
+        "rate": 4.22
+      },
+      {
+        "id": 28,
+        "name": "オムライス",
+        "notice": "ライス・スープ付き",
+        "category": "yoshoku",
+        "price": 900,
+        "unit": "1人前",
+        "rate": 4.40
+      },
+      {
+        "id": 29,
+        "name": "ハンバーグステーキ",
+        "notice": "ライス・スープ付き",
+        "category": "yoshoku",
+        "price": 950,
+        "unit": "1人前",
+        "rate": 4.32
+      },
+      {
+        "id": 30,
+        "name": "チーズインハンバーグ",
+        "notice": "ライス・スープ付き",
+        "category": "yoshoku",
+        "price": 1150,
+        "unit": "1人前",
+        "rate": 4.47
+      },
+      {
+        "id": 31,
+        "name": "ビーフステーキ",
+        "notice": "ライス・スープ付き",
+        "category": "yoshoku",
+        "price": 2000,
+        "unit": "1人前",
+        "rate": 4.10
+      },
+      {
+        "id": 32,
+        "name": "エビフライ",
+        "notice": "ライス・スープ付き",
+        "category": "yoshoku",
+        "price": 1600,
+        "unit": "1人前",
+        "rate": 4.23
+      },
+      {
+        "id": 33,
+        "name": "和風おろしハンバーグ",
+        "notice": "ライス・スープ付き",
+        "category": "yoshoku",
+        "price": 1150,
+        "unit": "1人前",
+        "rate": 4.19
+      },
+      {
+        "id": 34,
+        "name": "目玉焼きハンバーグ",
+        "notice": "ライス・スープ付き",
+        "category": "yoshoku",
+        "price": 1000,
+        "unit": "1人前",
+        "rate": 4.24
+      },
+      {
+        "id": 35,
+        "name": "ロースカツ",
+        "notice": "ライス・スープ付き",
+        "category": "yoshoku",
+        "price": 1600,
+        "unit": "1人前",
+        "rate": 4.50
+      },
+      {
+        "id": 36,
+        "name": "酢豚",
+        "notice": "ライス・スープ付き",
+        "category": "chinese",
+        "price": 900,
+        "unit": "1人前",
+        "rate": 4.34
+      },
+      {
+        "id": 37,
+        "name": "麻婆豆腐",
+        "notice": "ライス・スープ付き",
+        "category": "chinese",
+        "price": 950,
+        "unit": "1人前",
+        "rate": 4.17
+      },
+      {
+        "id": 38,
+        "name": "五目炒飯",
+        "notice": "スープ付き",
+        "category": "chinese",
+        "price": 800,
+        "unit": "1人前",
+        "rate": 4.32
+      },
+      {
+        "id": 39,
+        "name": "天津飯",
+        "notice": "スープ付き",
+        "category": "chinese",
+        "price": 900,
+        "unit": "1人前",
+        "rate": 4.47
+      },
+      {
+        "id": 40,
+        "name": "醤油豚骨ラーメン",
+        "notice": "単品",
+        "category": "chinese",
+        "price": 750,
+        "unit": "1人前",
+        "rate": 4.20
+      },
+      {
+        "id": 41,
+        "name": "エビのチリソース",
+        "notice": "ライス・スープ付き",
+        "category": "chinese",
+        "price": 900,
+        "unit": "1人前",
+        "rate": 4.44
+      },
+      {
+        "id": 42,
+        "name": "小籠包",
+        "notice": "単品",
+        "category": "chinese",
+        "price": 600,
+        "unit": "4個",
+        "rate": 4.17
+      },
+      {
+        "id": 43,
+        "name": "青椒肉絲",
+        "notice": "ライス・スープ付き",
+        "category": "chinese",
+        "price": 850,
+        "unit": "1人前",
+        "rate": 4.37
+      },
+      {
+        "id": 44,
+        "name": "肉焼売",
+        "notice": "単品",
+        "category": "chinese",
+        "price": 500,
+        "unit": "5個",
+        "rate": 4.30
+      },
+      {
+        "id": 45,
+        "name": "春巻",
+        "notice": "単品",
+        "category": "chinese",
+        "price": 600,
+        "unit": "3個",
+        "rate": 4.18
+      },
+      {
+        "id": 46,
+        "name": "焼餃子",
+        "notice": "単品",
+        "category": "chinese",
+        "price": 500,
+        "unit": "5個",
+        "rate": 4.41
+      },
+      {
+        "id": 47,
+        "name": "枝豆",
+        "notice": "単品",
+        "category": "otsumami",
+        "price": 350,
+        "unit": "100g",
+        "rate": 4.41
+      },
+      {
+        "id": 47,
+        "name": "枝豆",
+        "notice": "単品",
+        "category": "otsumami",
+        "price": 350,
+        "unit": "",
+        "rate": 4.41
+      },
+      {
+        "id": 48,
+        "name": "鶏の唐揚げ",
+        "notice": "単品",
+        "category": "otsumami",
+        "price": 600,
+        "unit": "",
+        "rate": 4.57
+      },
+      {
+        "id": 49,
+        "name": "焼鳥4種盛り合わせ",
+        "notice": "ねぎま・レバー・鶏皮・つくね",
+        "category": "otsumami",
+        "price": 750,
+        "unit": "",
+        "rate": 4.32
+      },
+      {
+        "id": 50,
+        "name": "肉じゃが",
+        "notice": "単品",
+        "category": "otsumami",
+        "price": 500,
+        "unit": "",
+        "rate": 4.29
+      },
+      {
+        "id": 50,
+        "name": "イカの塩辛",
+        "notice": "単品",
+        "category": "otsumami",
+        "price": 400,
+        "unit": "",
+        "rate": 4.11
+      },
+      {
+        "id": 51,
+        "name": "お新香盛り合わせ",
+        "notice": "単品",
+        "category": "otsumami",
+        "price": 250,
+        "unit": "",
+        "rate": 4.02
+      },
+      {
+        "id": 52,
+        "name": "マグロぶつ",
+        "notice": "単品",
+        "category": "otsumami",
+        "price": 600,
+        "unit": "",
+        "rate": 4.30
+      },
+      {
+        "id": 53,
+        "name": "冷奴",
+        "notice": "単品",
+        "category": "otsumami",
+        "price": 350,
+        "unit": "",
+        "rate": 4.20
+      },
+      {
+        "id": 54,
+        "name": "ほっけの開き",
+        "notice": "単品",
+        "category": "otsumami",
+        "price": 700,
+        "unit": "",
+        "rate": 4.43
+      },
+      {
+        "id": 55,
+        "name": "ほっけの開き",
+        "notice": "単品",
+        "category": "otsumami",
+        "price": 700,
+        "unit": "",
+        "rate": 4.43
+      },
+      {
+        "id": 56,
+        "name": "薯蕷饅頭",
+        "notice": "単品",
+        "category": "wagashi",
+        "price": 500,
+        "unit": "3個",
+        "rate": 4.29
+      },
+      {
+        "id": 57,
+        "name": "水羊羹",
+        "notice": "単品",
+        "category": "wagashi",
+        "price": 650,
+        "unit": "2個",
+        "rate": 4.17
+      },
+      {
+        "id": 58,
+        "name": "かしわ餅",
+        "notice": "単品",
+        "category": "wagashi",
+        "price": 650,
+        "unit": "2個",
+        "rate": 4.40
+      },
+      {
+        "id": 59,
+        "name": "カステラ",
+        "notice": "単品",
+        "category": "wagashi",
+        "price": 700,
+        "unit": "2個",
+        "rate": 4.15
+      },
+      {
+        "id": 60,
+        "name": "最中",
+        "notice": "単品",
+        "category": "wagashi",
+        "price": 400,
+        "unit": "2個",
+        "rate": 4.18
+      },
+      {
+        "id": 61,
+        "name": "おはぎ",
+        "notice": "単品",
+        "category": "wagashi",
+        "price": 600,
+        "unit": "3個",
+        "rate": 4.26
+      },
+      {
+        "id": 62,
+        "name": "桜餅",
+        "notice": "単品",
+        "category": "wagashi",
+        "price": 600,
+        "unit": "2個",
+        "rate": 4.41
+      },
+      {
+        "id": 63,
+        "name": "どら焼き",
+        "notice": "単品",
+        "category": "wagashi",
+        "price": 600,
+        "unit": "2個",
+        "rate": 4.18
+      },
+      {
+        "id": 64,
+        "name": "田楽",
+        "notice": "単品",
+        "category": "wagashi",
+        "price": 500,
+        "unit": "2個",
+        "rate": 4.31
+      },
+      {
+        "id": 65,
+        "name": "みたらし団子",
+        "notice": "単品",
+        "category": "wagashi",
+        "price": 400,
+        "unit": "2個",
+        "rate": 4.24
+      },
+      {
+        "id": 66,
+        "name": "たい焼き",
+        "notice": "単品",
+        "category": "wagashi",
+        "price": 480,
+        "unit": "2個",
+        "rate": 4.44
+      }
+    ]
   }
 }
