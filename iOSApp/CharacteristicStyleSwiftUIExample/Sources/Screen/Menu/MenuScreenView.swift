@@ -7,7 +7,7 @@ public struct MenuScreenView: View {
 
     // MARK: - ViewStateProvider
 
-    @State private var viewStateProvider: MenuViewStateProvider
+    private let viewStateProvider: MenuViewStateProvider
 
     // MARK: - Initializer
 

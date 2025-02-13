@@ -46,6 +46,7 @@ public final class MenuViewStateProvider {
                     let foodMenus = menuViewObjects.filter { $0.category == category }
                     groupedMenuViewObjects.append(foodMenus)
                 }
+                print("MenuViewObjects: ", groupedMenuViewObjects)
                 self.requestStatus = .success
             } catch let error {
                 // MEMO: 本来ならばエラーハンドリング処理等を入れる必要がある
