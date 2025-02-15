@@ -1,7 +1,7 @@
 import Entity
 import Foundation
 
-public struct MenuViewObject {
+public struct MenuViewObject: Hashable {
     
     // MARK: - Property
 
@@ -31,5 +31,16 @@ public struct MenuViewObject {
         self.price = price
         self.unit = unit
         self.rate = rate
+    }
+
+    // MARK: - Hashable
+
+    // MEMO: Hashableプロトコルに適合させるための処理
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    public static func == (lhs: MenuViewObject, rhs: MenuViewObject) -> Bool {
+        return lhs.id == rhs.id
     }
 }
