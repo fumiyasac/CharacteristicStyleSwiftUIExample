@@ -66,8 +66,11 @@ struct MenuRowView: View {
                     .padding(.bottom, 8.0)
             }
             .padding(.horizontal, 8.0)
-            .padding(.vertical, 4.0)
-            Spacer()
+            .padding(.top, 4.0)
+            .padding(.bottom, 2.0)
+            // 3. 区切り線表示
+            Divider()
+                .background(.gray)
         }
     }
 }
