@@ -99,15 +99,6 @@
       },
       {
         "id": 5,
-        "name": "天丼",
-        "notice": "味噌汁・お新香付き",
-        "category": "washoku",
-        "price": 1200,
-        "unit": "1人前",
-        "rate": 4.50
-      },
-      {
-        "id": 5,
         "name": "海鮮丼",
         "notice": "味噌汁・お新香付き",
         "category": "washoku",
@@ -260,15 +251,6 @@
         "rate": 4.37
       },
       {
-        "id": 22,
-        "name": "クリームシチュー",
-        "notice": "フランスパン2切れ付き",
-        "category": "yoshoku",
-        "price": 1200,
-        "unit": "1人前",
-        "rate": 4.21
-      },
-      {
         "id": 23,
         "name": "カルボナーラスパゲッティ",
         "notice": "単品",
@@ -314,7 +296,7 @@
         "rate": 4.22
       },
       {
-        "id": 27,
+        "id": 28,
         "name": "冷製ローストビーフ",
         "notice": "単品",
         "category": "yoshoku",
@@ -323,7 +305,7 @@
         "rate": 4.22
       },
       {
-        "id": 28,
+        "id": 29,
         "name": "オムライス",
         "notice": "ライス・スープ付き",
         "category": "yoshoku",
@@ -332,7 +314,7 @@
         "rate": 4.40
       },
       {
-        "id": 29,
+        "id": 30,
         "name": "ハンバーグステーキ",
         "notice": "ライス・スープ付き",
         "category": "yoshoku",
@@ -341,7 +323,7 @@
         "rate": 4.32
       },
       {
-        "id": 30,
+        "id": 31,
         "name": "チーズインハンバーグ",
         "notice": "ライス・スープ付き",
         "category": "yoshoku",
@@ -350,7 +332,7 @@
         "rate": 4.47
       },
       {
-        "id": 31,
+        "id": 32,
         "name": "ビーフステーキ",
         "notice": "ライス・スープ付き",
         "category": "yoshoku",
@@ -359,7 +341,7 @@
         "rate": 4.10
       },
       {
-        "id": 32,
+        "id": 33,
         "name": "エビフライ",
         "notice": "ライス・スープ付き",
         "category": "yoshoku",
@@ -368,7 +350,7 @@
         "rate": 4.23
       },
       {
-        "id": 33,
+        "id": 34,
         "name": "和風おろしハンバーグ",
         "notice": "ライス・スープ付き",
         "category": "yoshoku",
@@ -377,7 +359,7 @@
         "rate": 4.19
       },
       {
-        "id": 34,
+        "id": 35,
         "name": "目玉焼きハンバーグ",
         "notice": "ライス・スープ付き",
         "category": "yoshoku",
@@ -386,7 +368,7 @@
         "rate": 4.24
       },
       {
-        "id": 35,
+        "id": 36,
         "name": "ロースカツ",
         "notice": "ライス・スープ付き",
         "category": "yoshoku",
@@ -395,7 +377,7 @@
         "rate": 4.50
       },
       {
-        "id": 36,
+        "id": 37,
         "name": "酢豚",
         "notice": "ライス・スープ付き",
         "category": "chinese",
@@ -404,7 +386,7 @@
         "rate": 4.34
       },
       {
-        "id": 37,
+        "id": 38,
         "name": "麻婆豆腐",
         "notice": "ライス・スープ付き",
         "category": "chinese",
@@ -413,7 +395,7 @@
         "rate": 4.17
       },
       {
-        "id": 38,
+        "id": 39,
         "name": "五目炒飯",
         "notice": "スープ付き",
         "category": "chinese",
@@ -422,7 +404,7 @@
         "rate": 4.32
       },
       {
-        "id": 39,
+        "id": 40,
         "name": "天津飯",
         "notice": "スープ付き",
         "category": "chinese",
@@ -431,7 +413,7 @@
         "rate": 4.47
       },
       {
-        "id": 40,
+        "id": 41,
         "name": "醤油豚骨ラーメン",
         "notice": "単品",
         "category": "chinese",
@@ -440,7 +422,7 @@
         "rate": 4.20
       },
       {
-        "id": 41,
+        "id": 42,
         "name": "エビのチリソース",
         "notice": "ライス・スープ付き",
         "category": "chinese",
@@ -449,7 +431,7 @@
         "rate": 4.44
       },
       {
-        "id": 42,
+        "id": 43,
         "name": "小籠包",
         "notice": "単品",
         "category": "chinese",
@@ -458,7 +440,7 @@
         "rate": 4.17
       },
       {
-        "id": 43,
+        "id": 44,
         "name": "青椒肉絲",
         "notice": "ライス・スープ付き",
         "category": "chinese",
@@ -467,7 +449,7 @@
         "rate": 4.37
       },
       {
-        "id": 44,
+        "id": 45,
         "name": "肉焼売",
         "notice": "単品",
         "category": "chinese",
@@ -476,7 +458,7 @@
         "rate": 4.30
       },
       {
-        "id": 45,
+        "id": 46,
         "name": "春巻",
         "notice": "単品",
         "category": "chinese",
@@ -485,7 +467,7 @@
         "rate": 4.18
       },
       {
-        "id": 46,
+        "id": 47,
         "name": "焼餃子",
         "notice": "単品",
         "category": "chinese",
@@ -494,7 +476,7 @@
         "rate": 4.41
       },
       {
-        "id": 47,
+        "id": 48,
         "name": "枝豆",
         "notice": "単品",
         "category": "otsumami",
@@ -503,16 +485,7 @@
         "rate": 4.41
       },
       {
-        "id": 47,
-        "name": "枝豆",
-        "notice": "単品",
-        "category": "otsumami",
-        "price": 350,
-        "unit": "",
-        "rate": 4.41
-      },
-      {
-        "id": 48,
+        "id": 49,
         "name": "鶏の唐揚げ",
         "notice": "単品",
         "category": "otsumami",
@@ -521,7 +494,7 @@
         "rate": 4.57
       },
       {
-        "id": 49,
+        "id": 50,
         "name": "焼鳥4種盛り合わせ",
         "notice": "ねぎま・レバー・鶏皮・つくね",
         "category": "otsumami",
@@ -530,7 +503,7 @@
         "rate": 4.32
       },
       {
-        "id": 50,
+        "id": 51,
         "name": "肉じゃが",
         "notice": "単品",
         "category": "otsumami",
@@ -539,7 +512,7 @@
         "rate": 4.29
       },
       {
-        "id": 50,
+        "id": 52,
         "name": "イカの塩辛",
         "notice": "単品",
         "category": "otsumami",
@@ -548,7 +521,7 @@
         "rate": 4.11
       },
       {
-        "id": 51,
+        "id": 53,
         "name": "お新香盛り合わせ",
         "notice": "単品",
         "category": "otsumami",
@@ -557,7 +530,7 @@
         "rate": 4.02
       },
       {
-        "id": 52,
+        "id": 54,
         "name": "マグロぶつ",
         "notice": "単品",
         "category": "otsumami",
@@ -566,7 +539,7 @@
         "rate": 4.30
       },
       {
-        "id": 53,
+        "id": 55,
         "name": "冷奴",
         "notice": "単品",
         "category": "otsumami",
@@ -575,25 +548,25 @@
         "rate": 4.20
       },
       {
-        "id": 54,
-        "name": "ほっけの開き",
-        "notice": "単品",
-        "category": "otsumami",
-        "price": 700,
-        "unit": "",
-        "rate": 4.43
-      },
-      {
-        "id": 55,
-        "name": "ほっけの開き",
-        "notice": "単品",
-        "category": "otsumami",
-        "price": 700,
-        "unit": "",
-        "rate": 4.43
-      },
-      {
         "id": 56,
+        "name": "ほっけの開き",
+        "notice": "単品",
+        "category": "otsumami",
+        "price": 700,
+        "unit": "",
+        "rate": 4.43
+      },
+      {
+        "id": 57,
+        "name": "ほっけの開き",
+        "notice": "単品",
+        "category": "otsumami",
+        "price": 700,
+        "unit": "",
+        "rate": 4.43
+      },
+      {
+        "id": 58,
         "name": "薯蕷饅頭",
         "notice": "単品",
         "category": "wagashi",
@@ -602,7 +575,7 @@
         "rate": 4.29
       },
       {
-        "id": 57,
+        "id": 59,
         "name": "水羊羹",
         "notice": "単品",
         "category": "wagashi",
@@ -611,7 +584,7 @@
         "rate": 4.17
       },
       {
-        "id": 58,
+        "id": 60,
         "name": "かしわ餅",
         "notice": "単品",
         "category": "wagashi",
@@ -620,7 +593,7 @@
         "rate": 4.40
       },
       {
-        "id": 59,
+        "id": 61,
         "name": "カステラ",
         "notice": "単品",
         "category": "wagashi",
@@ -629,7 +602,7 @@
         "rate": 4.15
       },
       {
-        "id": 60,
+        "id": 62,
         "name": "最中",
         "notice": "単品",
         "category": "wagashi",
@@ -638,7 +611,7 @@
         "rate": 4.18
       },
       {
-        "id": 61,
+        "id": 63,
         "name": "おはぎ",
         "notice": "単品",
         "category": "wagashi",
@@ -647,7 +620,7 @@
         "rate": 4.26
       },
       {
-        "id": 62,
+        "id": 64,
         "name": "桜餅",
         "notice": "単品",
         "category": "wagashi",
@@ -656,7 +629,7 @@
         "rate": 4.41
       },
       {
-        "id": 63,
+        "id": 65,
         "name": "どら焼き",
         "notice": "単品",
         "category": "wagashi",
@@ -665,7 +638,7 @@
         "rate": 4.18
       },
       {
-        "id": 64,
+        "id": 66,
         "name": "田楽",
         "notice": "単品",
         "category": "wagashi",
@@ -674,7 +647,7 @@
         "rate": 4.31
       },
       {
-        "id": 65,
+        "id": 67,
         "name": "みたらし団子",
         "notice": "単品",
         "category": "wagashi",
@@ -683,7 +656,7 @@
         "rate": 4.24
       },
       {
-        "id": 66,
+        "id": 68,
         "name": "たい焼き",
         "notice": "単品",
         "category": "wagashi",
