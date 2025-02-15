@@ -37,7 +37,7 @@ struct RatingViewRepresentable: UIViewRepresentable {
         // MEMO: ライブラリ「Cosmos」の基本設定部分
         // 👉 色やサイズをはじめ表示モード等についても細かく設定が可能です。
         uiView.settings.fillMode = .precise
-        uiView.settings.starSize = 26
+        uiView.settings.starSize = 21
         uiView.settings.emptyBorderWidth = 1.0
         uiView.settings.filledBorderWidth = 1.0
         uiView.settings.emptyBorderColor = .systemYellow

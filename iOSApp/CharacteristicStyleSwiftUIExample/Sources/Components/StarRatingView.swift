@@ -8,7 +8,7 @@ public struct StarRatingView: View {
 
     // MARK: - Initializer
 
-    init(rating: Double) {
+    public init(rating: Double) {
         // イニシャライザ内で「_(変数名)」値を代入することでState値の初期化を実行する
         _rating = State(initialValue: rating)
     }
