@@ -32,13 +32,13 @@ public struct MenuEntity: Hashable, Decodable {
             }
         }
 
-        public var eyecatchUrl: String {
+        public var eyecatchUrl: URL? {
             switch self {
-            case .washoku: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_washoku.png"
-            case .yoshoku: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_yoshioku.png"
-            case .chinese: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_chinese.png"
-            case .otsumami: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_otsumami.png"
-            case .wagashi: return "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_wagashi.png"
+            case .washoku: return URL(string: "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_washoku.png")
+            case .yoshoku: return URL(string: "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_yoshioku.png")
+            case .chinese: return URL(string: "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_chinese.png")
+            case .otsumami: return URL(string: "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_otsumami.png")
+            case .wagashi: return URL(string: "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/menu/menu_wagashi.png")
             }
         }
 
