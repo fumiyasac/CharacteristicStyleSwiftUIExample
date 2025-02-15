@@ -52,7 +52,14 @@ public struct MenuScreenView: View {
     public var body: some View {
         NavigationStack {
             ScrollViewReader { proxy in
-                MenuGroupedSectionScrollView(proxy: proxy)
+                Group {
+                    if viewStateProvider.requestStatus == .success {
+                        MenuGroupedSectionScrollView(proxy: proxy)
+                    } else {
+                        // TODO: Error発生時のハンドリング処理を実施する
+                        Text("MenuScreen")
+                    }
+                 }
             }
             // 独自定義したModifier「.getRectangleViewToCoordinateSpace」に定めるための基準を設定する（※今回は特定の文字列を定める）
             .coordinateSpace(name: coordinateSpaceContentView)
