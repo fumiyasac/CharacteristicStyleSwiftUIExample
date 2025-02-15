@@ -1,10 +1,3 @@
-//
-//  SwiftUIView.swift
-//  CharacteristicStyleSwiftUIExample
-//
-//  Created by 酒井文也 on 2025/02/15.
-//
-
 import Components
 import SwiftUI
 import ViewObject
@@ -78,17 +71,3 @@ struct MenuRowView: View {
         }
     }
 }
-
-//#Preview {
-//    MenuRowView(
-//        menuViewObject: MenuViewObject(
-//            id: 1,
-//            name: "親子丼",
-//            notice: "味噌汁・お新香付き",
-//            category: .washoku,
-//            price: 900,
-//            unit: "1人前",
-//            rate: 4.37
-//        )
-//    )
-//}

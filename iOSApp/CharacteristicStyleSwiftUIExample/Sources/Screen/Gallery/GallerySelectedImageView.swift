@@ -1,10 +1,3 @@
-//
-//  SwiftUIView.swift
-//  CharacteristicStyleSwiftUIExample
-//
-//  Created by 酒井文也 on 2025/02/08.
-//
-
 import SwiftUI
 import ViewObject
 
