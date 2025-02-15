@@ -12,10 +12,10 @@ public final class MenuViewStateProvider {
     
     private let menuRequestRepository: MenuRequestRepository
 
-    private var requestStatus: APIRequestState = .none
+    public var requestStatus: APIRequestState = .none
 
     // MEMO: 一覧表示に関係するProperty（●●●ViewObjectsの様な命名をしている）
-    private(set) var groupedMenuViewObjects: [[MenuViewObject]] = []
+    public var groupedMenuViewObjects: [[MenuViewObject]] = []
 
     // MARK: - Initializer
 
@@ -46,7 +46,6 @@ public final class MenuViewStateProvider {
                     let foodMenus = menuViewObjects.filter { $0.category == category }
                     groupedMenuViewObjects.append(foodMenus)
                 }
-                print("MenuViewObjects: ", groupedMenuViewObjects)
                 self.requestStatus = .success
             } catch let error {
                 // MEMO: 本来ならばエラーハンドリング処理等を入れる必要がある
