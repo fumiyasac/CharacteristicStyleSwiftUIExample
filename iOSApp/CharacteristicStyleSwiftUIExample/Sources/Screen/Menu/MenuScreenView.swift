@@ -4,6 +4,10 @@ import SwiftUI
 import ViewStateProvider
 import ViewObject
 
+// MEMO: 下記2点が課題として残っている。
+// 👉 タブ表示部分を押下して所定位置までスクロールする処理で、停止位置がずれてしまう。
+// 👉 Consoleにエラーメッセージ「Bound preference OffsetPreferenceKey tried to update multiple times per frame.」が表示される。
+
 public struct MenuScreenView: View {
 
     // MARK: - ViewStateProvider
