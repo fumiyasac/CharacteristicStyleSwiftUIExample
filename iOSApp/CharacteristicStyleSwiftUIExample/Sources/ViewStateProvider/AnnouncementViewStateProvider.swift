@@ -29,7 +29,6 @@ public final class AnnouncementViewStateProvider {
         Task { @MainActor in
             self.requestStatus = .requesting
             do {
-                // MEMO: async/awaitベースの処理で必要な値を取得し、その後`private(set)`で定義した値を更新する
                 let announcementEntities = try await self.announcementRepository.getAnnouncements()
                 self.announcementViewObjects = announcementEntities.map {
                     AnnouncementViewObject(

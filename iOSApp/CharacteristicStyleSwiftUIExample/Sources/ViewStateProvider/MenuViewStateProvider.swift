@@ -29,7 +29,6 @@ public final class MenuViewStateProvider {
         Task { @MainActor in
             self.requestStatus = .requesting
             do {
-                // MEMO: async/awaitベースの処理で必要な値を取得し、その後`private(set)`で定義した値を更新する
                 let menuEntities = try await self.menuRequestRepository.getMenus()
                 let menuViewObjects = menuEntities.map {
                     MenuViewObject(
