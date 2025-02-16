@@ -27,7 +27,7 @@ public enum APIRequestState {
 // MARK: - Protocol
 
 public protocol APIClientManagerProtocol {
-    func getAnnouncementsBy(page: Int) async throws -> AnnouncementsAPIResponse
+    func getAnnouncements() async throws -> AnnouncementsAPIResponse
     func getGalleries() async throws -> GalleriesAPIResponse
     func getMenus() async throws -> MenusAPIResponse
 }
@@ -186,13 +186,12 @@ public final class ApiClientManager {
 
 extension ApiClientManager: APIClientManagerProtocol {
 
-    public func getAnnouncementsBy(page: Int) async throws -> AnnouncementsAPIResponse {
-        let result = try await executeAPIRequest(
-            endpointUrl: EndPoint.announcements.getBaseUrl() + "?page=" + String(page),
+    public func getAnnouncements() async throws -> AnnouncementsAPIResponse {
+        return try await executeAPIRequest(
+            endpointUrl: EndPoint.announcements.getBaseUrl(),
             httpMethod: HTTPMethod.GET,
-            responseFormat: [AnnouncementEntity].self
+            responseFormat: AnnouncementsAPIResponse.self
         )
-        return AnnouncementsAPIResponse(result: result)
     }
 
     public func getGalleries() async throws -> GalleriesAPIResponse {
