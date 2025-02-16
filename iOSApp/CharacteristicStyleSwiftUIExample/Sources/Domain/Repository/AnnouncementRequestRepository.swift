@@ -5,7 +5,7 @@ import Infrastructure
 // MARK: - Protocol
 
 public protocol AnnouncementRequestRepository {
-    func getAnnouncementsBy(page: Int) async throws -> [AnnouncementEntity]
+    func getAnnouncements() async throws -> [AnnouncementEntity]
 }
 
 public final class AnnouncementRequestRepositoryImpl: AnnouncementRequestRepository {
@@ -22,7 +22,7 @@ public final class AnnouncementRequestRepositoryImpl: AnnouncementRequestReposit
 
     // MARK: - Function
 
-    public func getAnnouncementsBy(page: Int) async throws -> [AnnouncementEntity] {
-        try await apiClientManager.getAnnouncementsBy(page: page).result
+    public func getAnnouncements() async throws -> [AnnouncementEntity] {
+        try await apiClientManager.getAnnouncements().result
     }
 }
