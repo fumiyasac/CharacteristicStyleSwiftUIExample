@@ -4,7 +4,7 @@
       {
         "id": 1,
         "title": "サンプル店舗:No.1から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.1からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example1.jpg",
         "published_at": "2025/02/08"
@@ -12,7 +12,7 @@
       {
         "id": 2,
         "title": "サンプル店舗:No.2から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.2からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example2.jpg",
         "published_at": "2025/02/08"
@@ -20,7 +20,7 @@
       {
         "id": 3,
         "title": "サンプル店舗:No.3から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.3からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example3.jpg",
         "published_at": "2025/02/08"
@@ -28,7 +28,7 @@
       {
         "id": 4,
         "title": "サンプル店舗:No.4から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.4からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example4.jpg",
         "published_at": "2025/02/08"
@@ -36,7 +36,7 @@
       {
         "id": 5,
         "title": "サンプル店舗:No.5から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.5からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example5.jpg",
         "published_at": "2025/02/08"
@@ -44,7 +44,7 @@
       {
         "id": 6,
         "title": "サンプル店舗:No.6から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.6からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example6.jpg",
         "published_at": "2025/02/08"
@@ -52,7 +52,7 @@
       {
         "id": 7,
         "title": "サンプル店舗:No.7から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.7からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example7.jpg",
         "published_at": "2025/02/08"
@@ -60,7 +60,7 @@
       {
         "id": 8,
         "title": "サンプル店舗:No.8から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.8からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example8.jpg",
         "published_at": "2025/02/08"
@@ -68,7 +68,7 @@
       {
         "id": 9,
         "title": "サンプル店舗:No.9から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.9からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example9.jpg",
         "published_at": "2025/02/08"
@@ -76,7 +76,7 @@
       {
         "id": 10,
         "title": "サンプル店舗:No.10から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.10からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example10.jpg",
         "published_at": "2025/02/08"
@@ -84,7 +84,7 @@
       {
         "id": 11,
         "title": "サンプル店舗:No.11から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.11からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example11.jpg",
         "published_at": "2025/02/08"
@@ -92,7 +92,7 @@
       {
         "id": 12,
         "title": "サンプル店舗:No.12から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.12からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example12.jpg",
         "published_at": "2025/02/08"
@@ -100,7 +100,7 @@
       {
         "id": 13,
         "title": "サンプル店舗:No.13から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.13からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example13.jpg",
         "published_at": "2025/02/08"
@@ -108,7 +108,7 @@
       {
         "id": 14,
         "title": "サンプル店舗:No.14から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.14からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example14.jpg",
         "published_at": "2025/02/08"
@@ -116,7 +116,7 @@
       {
         "id": 15,
         "title": "サンプル店舗:No.15から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.15からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example15.jpg",
         "published_at": "2025/02/08"
@@ -124,7 +124,7 @@
       {
         "id": 16,
         "title": "サンプル店舗:No.16から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.16からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example16.jpg",
         "published_at": "2025/02/08"
@@ -132,7 +132,7 @@
       {
         "id": 17,
         "title": "サンプル店舗:No.17から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.17からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example17.jpg",
         "published_at": "2025/02/08"
@@ -140,7 +140,7 @@
       {
         "id": 18,
         "title": "サンプル店舗:No.18から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.18からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example18.jpg",
         "published_at": "2025/02/08"
@@ -148,7 +148,7 @@
       {
         "id": 19,
         "title": "サンプル店舗:No.19から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.19からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example19.jpg",
         "published_at": "2025/02/08"
@@ -156,7 +156,7 @@
       {
         "id": 20,
         "title": "サンプル店舗:No.20から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.20からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example20.jpg",
         "published_at": "2025/02/08"
@@ -164,7 +164,7 @@
       {
         "id": 21,
         "title": "サンプル店舗:No.21から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.21からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example21.jpg",
         "published_at": "2025/02/08"
@@ -172,7 +172,7 @@
       {
         "id": 22,
         "title": "サンプル店舗:No.22から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.22からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example22.jpg",
         "published_at": "2025/02/08"
@@ -180,7 +180,7 @@
       {
         "id": 23,
         "title": "サンプル店舗:No.23から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.23からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example23.jpg",
         "published_at": "2025/02/08"
@@ -188,7 +188,7 @@
       {
         "id": 24,
         "title": "サンプル店舗:No.24から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.24からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example24.jpg",
         "published_at": "2025/02/08"
@@ -196,7 +196,7 @@
       {
         "id": 25,
         "title": "サンプル店舗:No.25から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.25からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example25.jpg",
         "published_at": "2025/02/08"
@@ -204,7 +204,7 @@
       {
         "id": 26,
         "title": "サンプル店舗:No.26から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.26からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example26.jpg",
         "published_at": "2025/02/08"
@@ -212,7 +212,7 @@
       {
         "id": 27,
         "title": "サンプル店舗:No.27から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.27からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example27.jpg",
         "published_at": "2025/02/08"
@@ -220,7 +220,7 @@
       {
         "id": 28,
         "title": "サンプル店舗:No.28から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.28からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example28.jpg",
         "published_at": "2025/02/08"
@@ -228,7 +228,7 @@
       {
         "id": 29,
         "title": "サンプル店舗:No.29から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.29からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example29.jpg",
         "published_at": "2025/02/08"
@@ -236,7 +236,7 @@
       {
         "id": 30,
         "title": "サンプル店舗:No.30から新情報が追加されました！",
-        "caregory": "New Information",
+        "category": "New Information",
         "summary": "サンプル店舗:No.30からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
         "thumbnail_url": "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example30.jpg",
         "published_at": "2025/02/08"
