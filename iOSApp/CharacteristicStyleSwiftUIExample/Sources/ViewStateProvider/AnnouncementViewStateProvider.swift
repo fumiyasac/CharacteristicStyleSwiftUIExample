@@ -9,7 +9,7 @@ public final class AnnouncementViewStateProvider {
     
     // MARK: - Property
 
-    private let announcementRepository: AnnouncementRequestRepository
+    private let announcementRepository: AnnouncementRepository
 
     public var requestStatus: APIRequestState = .none
 
@@ -18,7 +18,7 @@ public final class AnnouncementViewStateProvider {
 
     // MARK: - Initializer
 
-    public init(announcementRepository: AnnouncementRequestRepository = AnnouncementRequestRepositoryImpl()) {
+    public init(announcementRepository: AnnouncementRepository = AnnouncementRepositoryImpl()) {
         self.announcementRepository = announcementRepository
     }
 

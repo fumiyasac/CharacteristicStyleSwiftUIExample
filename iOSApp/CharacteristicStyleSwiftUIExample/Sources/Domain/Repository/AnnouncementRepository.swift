@@ -4,11 +4,11 @@ import Infrastructure
 
 // MARK: - Protocol
 
-public protocol AnnouncementRequestRepository {
+public protocol AnnouncementRepository {
     func getAnnouncements() async throws -> [AnnouncementEntity]
 }
 
-public final class AnnouncementRequestRepositoryImpl: AnnouncementRequestRepository {
+public final class AnnouncementRepositoryImpl: AnnouncementRepository {
 
     // MARK: - Property
 
