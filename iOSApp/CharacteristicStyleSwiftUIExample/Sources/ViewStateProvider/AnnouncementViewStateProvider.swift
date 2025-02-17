@@ -38,7 +38,7 @@ public final class AnnouncementViewStateProvider {
                         summary: $0.summary,
                         thumbnailUrl: $0.thumbnailUrl,
                         publishedAt: $0.publishedAt,
-                        isFavorited: false
+                        isStocked: false
                     )
                 }
                 print(self.announcementViewObjects)

@@ -10,7 +10,7 @@ public struct AnnouncementViewObject {
     public let summary: String
     public let thumbnailUrl: URL?
     public let publishedAt: String
-    public let isFavorited: Bool
+    public let isStocked: Bool
 
     // MARK: - Initializer
 
@@ -21,7 +21,7 @@ public struct AnnouncementViewObject {
         summary: String,
         thumbnailUrl: String,
         publishedAt: String,
-        isFavorited: Bool
+        isStocked: Bool
     ) {
         self.id = id
         self.title = title
@@ -29,6 +29,6 @@ public struct AnnouncementViewObject {
         self.summary = summary
         self.thumbnailUrl = URL(string: thumbnailUrl) ?? nil
         self.publishedAt = publishedAt
-        self.isFavorited = isFavorited
+        self.isStocked = isStocked
     }
 }
