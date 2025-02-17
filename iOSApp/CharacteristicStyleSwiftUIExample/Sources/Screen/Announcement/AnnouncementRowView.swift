@@ -8,9 +8,6 @@ struct AnnouncementRowView: View {
 
     private var announcementViewObject: AnnouncementViewObject
 
-    // Favoriteボタン（ハート型ボタン要素）の状態を管理するための変数
-    @State private var isStocked: Bool = false
-
     // MARK: - Initializer
 
     init(announcementViewObject: AnnouncementViewObject) {
