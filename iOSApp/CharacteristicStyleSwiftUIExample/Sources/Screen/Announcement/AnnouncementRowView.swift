@@ -62,7 +62,7 @@ struct AnnouncementRowView: View {
                 .padding(.leading, 12.0)
 
             }
-            // 2. Summary表示＆ハート型お気に入り表示
+            // 2. Summary表示
             HStack(spacing: 0.0) {
                 Text(announcementViewObject.summary)
                     .font(.footnote)
