@@ -6,7 +6,7 @@
 
 ## 1. サンプル概要
 
-__【認証画面】__
+__【一覧表示画面】__
 
 <img src="./images/page_example1.png" width="320"> <img src="./images/page_example2.png" width="320">
 
