@@ -22,22 +22,18 @@ struct MenuRowView: View {
             // 1. データ文言表示
             HStack {
                 VStack(alignment: .leading, spacing: 0.0) {
-                    // 1-(1).
                     Text(menuViewObject.name)
                         .font(.subheadline)
                         .bold()
                         .foregroundColor(.primary)
-                    // 1-(2).
                     Text(menuViewObject.notice)
                         .font(.subheadline)
                         .foregroundColor(.gray)
                         .padding(.top, 4.0)
-                    // 1-(3).
                     Text("値段: \(menuViewObject.price) [円]")
                         .font(.subheadline)
                         .foregroundColor(.gray)
                         .padding(.top, 4.0)
-                    // 1-(4).
                     if !menuViewObject.unit.isEmpty {
                         Text("(\(menuViewObject.unit))")
                             .font(.subheadline)
