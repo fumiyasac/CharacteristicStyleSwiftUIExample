@@ -25,6 +25,8 @@ struct AnnouncementRowView: View {
     ) {
         self.announcementViewObject = announcementViewObject
         self.tapStockAnnouncementButtonAction = tapStockAnnouncementButtonAction
+        // イニシャライザ内で「_(変数名)」値を代入することでState値の初期化を実行する
+        _isStocked = State(initialValue: announcementViewObject.isStocked)
     }
 
     // MARK: - Body
@@ -48,6 +50,7 @@ struct AnnouncementRowView: View {
                     } else {
                         // サムネイル画像が存在しない場合は白色背景を表示する
                         Color(.white)
+                            .frame(width: 64.0, height: 64.0)
                             .background(
                                 RoundedRectangle(cornerRadius: 4.0)
                                     .stroke(.gray)
@@ -77,12 +80,15 @@ struct AnnouncementRowView: View {
                     .font(.footnote)
                     .foregroundStyle(.secondary)
                     .padding(.vertical, 10.0)
+                    .lineLimit(2)
                 Spacer()
                 Button(action: {
-                    isStocked = !announcementViewObject.isFavorited
+                    // 現在のハートマークの表示状態を更新する
+                    isStocked = !isStocked
+                    // 表示用のView要素からSwiftDataへのお気に入り登録処理を実行するためにClosureで必要なデータを渡す
                     tapStockAnnouncementButtonAction(isStocked, announcementViewObject)
                 }, label: {
-                    if announcementViewObject.isFavorited {
+                    if isStocked {
                         Image(systemName: "heart.fill")
                     } else {
                         Image(systemName: "heart")
@@ -93,23 +99,7 @@ struct AnnouncementRowView: View {
             Divider()
                 .background(.gray)
         }
-        .padding(16.0)
+        .padding(.top, 16.0)
+        .padding(.horizontal, 16.0)
     }
 }
-
-/*
-#Preview {
-    AnnouncementRowView(
-        announcementViewObject: AnnouncementViewObject(
-            id: 1,
-            title: "サンプル店舗:No.1から新情報が追加されました！",
-            category: "New Information",
-            summary: "サンプル店舗:No.1からの耳寄りな情報が追加されましたので、是非ご確認下さい🙏。",
-            thumbnailUrl: "https://characteristic-style.s3.ap-northeast-1.amazonaws.com/announcement/announcement_example1.jpg",
-            publishedAt: "2025/02/08",
-            isFavorited: true
-        ),
-        tapStockAnnouncementButtonAction: { _ in }
-    )
-}
-*/
