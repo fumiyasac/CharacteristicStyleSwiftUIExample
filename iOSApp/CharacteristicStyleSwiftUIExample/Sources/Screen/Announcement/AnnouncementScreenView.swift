@@ -23,9 +23,7 @@ public struct AnnouncementScreenView: View {
                 if viewStateProvider.requestStatus == .success {
                     ScrollView {
                         ForEach(viewStateProvider.announcementViewObjects, id: \.id) { viewObject in
-                            AnnouncementRowView(
-                                announcementViewObject: viewObject,
-                                tapStockAnnouncementButtonAction: { _, _ in })
+                            AnnouncementRowView(announcementViewObject: viewObject)
                         }
                     }
                 } else {

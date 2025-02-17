@@ -25,7 +25,6 @@ public final class AnnouncementViewStateProvider {
     // MARK: - Function
 
     public func fetchAnnouncements() {
-        // TODO: この形がまだ不完全なので、これから作成する
         Task { @MainActor in
             self.requestStatus = .requesting
             do {
@@ -37,11 +36,9 @@ public final class AnnouncementViewStateProvider {
                         category: $0.category,
                         summary: $0.summary,
                         thumbnailUrl: $0.thumbnailUrl,
-                        publishedAt: $0.publishedAt,
-                        isStocked: false
+                        publishedAt: $0.publishedAt
                     )
                 }
-                print(self.announcementViewObjects)
                 self.requestStatus = .success
             } catch let error {
                 // MEMO: 本来ならばエラーハンドリング処理等を入れる必要がある
